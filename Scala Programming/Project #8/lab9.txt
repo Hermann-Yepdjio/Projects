@@ -1,0 +1,247 @@
+CS558 Fall 2021 Lab 9 Instructions
+==================================
+
+In this lab, you will examine how some real language supports (or
+fails to support) the concept of abstract data types (ADTs).  To do
+this, you will use the language to write two different implementations
+of a simple ADT for mutable queues, driver client code that exercises
+them, and a README file that explains how and if the language supports
+various desirable features of ADT development. The purpose of the lab
+is two-fold: to help you explore the idea of data abstraction and to
+give you experience learning the features of a real language.
+
+As with the other assignments, you are encouraged to collaborate with
+other students, but you must make your own individual submission.
+
+Languages
+---------
+
+You must use one of the following languages: Rust, Go, Swift, or Haskell.
+
+You will learn the most if you choose a language that you do not
+already know well.
+
+You can find plentiful reference and tutorial information about all
+these languages on the web. They also have implementations that you
+can easily download and install on your own hardware.  Also, the CS
+linuxlab machines have implementations for all of these
+languages. (You may need to use the addpkg command to add the
+necessary tools to your linuxlab environment.)
+
+In general, you should try to use a fairly recent version of the
+language.  In particular, for Go you should use version 1.13 or newer,
+and for Swift version 5.1 or newer.  
+
+Queue ADT
+---------
+
+Here is an abstract description of the interface for mutable
+first-in-first-out (FIFO) queues, parameterized by a queue element type
+elem.
+
+empty   : unit -> queue<elem>                 --- yields a new empty queue
+isEmpty : queue<elem> -> bool                 --- answers "is queue empty?"
+dequeue : queue<elem> -> elem + None          --- removes front item from queue and returns it;
+	                                      --- if queue is empty, returns None (without changing queue)
+enqueue : queue<elem> * elem -> ()            --- adds elem to end of queue
+
+When realizing this interface in a real programming language, you
+should adopt idiomatic features of the language as appropriate.  For
+example, the return type of dequeue is elem + None, indicating a
+disjoint union type. Depending on the language, you might choose to
+use an option type, or represent the None alternative as a null value,
+or return an error flag in addition to the element.  In an
+object-oriented language, it will be natural to treat queues as
+objects and define isEmpty, dequeue, and enqueue as methods on those
+objects, so that the queue itself becomes an implicit argument. Also,
+the desired polymorphism over the type elem can be realized in
+different ways in different languages.  
+
+Haskell note: since these queues need to be mutable, you should
+define them in the IO monad.  
+
+Some implementations may put additional constraints of these functions
+due to resource limitations, e.g. by limiting the number of elements
+that can be held in a queue. The interface deliberately does not
+reflect this possibility.  If some such constraint is violated, the
+implementation should abort the program, raise an exception or
+otherwise indicate a "panic" sitution in whatever way is idiomatic in
+the language. There is no requirement to support the possibility of
+clients catching and handling such constraint violations.
+
+Queue Implementations
+---------------------
+
+You are asked to code two different implementations of these queues.
+
+A. Ring implementation.  This uses a "ring buffer" stored in
+a fixed length array. The maximum size of the queue is defined by
+a compile time constant N in the implementation. 
+
+For more information and intuition about this implementation see
+http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/8-List/array-queue2.html
+
+Each queue<elem> is represented by a record with fields:
+  values : elem[N+1]  -- an array
+  front : int         -- index of array slot containing next element to dequeue
+  rear : int          -- index of array slot to store next enqueued element
+   
+Here the pseudo-code for each operation:
+
+empty() :
+  q = new queue<elem>
+  q.values[0] = q.values[1] = ... q.values[N] = arbitrary value
+  q.front = 0
+  q.rear = 0
+  return q
+
+isEmpty(q):
+  return q.front == q.rear 
+
+dequeue(q):
+   if q.front == q.rear
+      return None
+   else
+      v = values[q.front]
+      q.front = (q.front+1)%(N+1)
+      return v
+
+enqueue(q,v):
+    if (q.rear + 1) % (N+1) == q.front 
+       abort // out of room
+    else
+       values[q.rear] = v
+       q.rear = (q.rear+1)%(N+1)
+
+B. Linked list implementation. This uses a singly-linked list of nodes
+each containing a value,  with a pointer to the first and last nodes.
+
+For more details, see
+http://www.mathcs.emory.edu/~cheung/Courses/171/Syllabus/8-List/list-queue2.html
+
+The list is made up of nodes of type node<elem>, which is represented
+as a record
+   value : elem
+   next : ptr to node (can be null to reprsent the end of the list)
+
+The type queue<elem> is represented by a record
+  front : node<elem>  -- pointer to next element to dequeue (null if queue empty)
+  rear : node<elem>   -- pointer to last enqueued element (null if queue empty)
+
+Note the implicit invariant: front and rear are either both null or both non-null.
+
+Here the pseudo-code for each operation:
+
+empty():
+  q = new queue<elem>
+  q.front = null
+  q.rear = null
+  return q
+
+isEmpty(q):
+  return q.front == null
+
+dequeue(q):
+   if q.front == null 	   
+      return None
+   else
+      n = q.front
+      q.front = n.next
+      if q.front == null
+      	 q.rear = null
+      v = n.value
+      free(n)     -- if doing manual memory management
+      return v
+
+enqueue(q,v):
+    n = new node
+    n.value = v
+    n.next = null
+    if q.rear == null 
+       q.front = n
+       q.rear = n
+    else
+       q.rear.next = n
+       q.rear = n
+
+
+Goals for your code
+-------------------
+
+Ideally your realization of this ADT should have the following features.
+However, these may not all be supported by your choice of language.
+Part of your task is document which features are and are not supported,
+in a README file.
+
+1. The interface is expressed separately from the implementations, ideally
+in a separate file.
+
+2. Interface and implementations can be compiled separately from the client.
+Ideally, interface and implementations can be compiled separately from
+each other.
+
+2. The interface and implementations are parametrically polymorphic over
+the type of elements in the queue.  This means that a given queue should
+contain elements of only one type.  If the language doesn't support this,
+a second-best alternative is to support queues containing values of
+multiple different types.
+
+3. For each implementation, the language enforces that the representation
+of the queue is hidden from client code.  Most importantly, clients cannot
+corrupt a queue instance by writing directly to its fields.
+
+4. The choice of queue implementation can be changed with minimal
+impact on client code. Ideally, this should not even require
+recompilation of the client.  More likely, the client will require
+recompilation, but perhaps no change to the code. In some languages,
+the invocation of empty() to create a new queue may need to be changed.
+
+Deliverables
+------------
+
+The following items should be zipped into a single file and submitted
+to WebLab.
+
+1. Code for the interface.
+
+2. Code for each implementation.
+
+3. Driver client code that exercises the ADT by:
+
+  a. creating and using a queue of integers using implementation A
+  b. creating and using a queue of strings using implementation A
+  c. creating and using a queue of integers using implementation B
+  d. creating and using a queue of strings using implementation B
+
+The driver should print out appropriate information to show the
+progress of the various interface calls and the results.
+
+4. Any language-specific files needed to build and execute the driver.
+For example, some languages may require a manifest of the relevant
+files. Otherwise, a standard *nix make file might be useful, but is
+not required.
+
+5. A README file that explains:
+
+  a. How to compile, link and run the driver and ADT code.
+
+  b. How to modify the driver code to change the choice of
+     implementations for each queue, and what needs to be
+     done to recompile and/or relink after that change is made.
+
+  c. Any places where your code fails to meet the goals outlined
+     in the section above, with a brief explanation of why the
+     language did not support that goal.
+
+Assessment
+----------
+
+Your submission will be assessed based on how well it meets
+the goals relative to the capabilities of the language you chose.
+Although we will attempt to compile and run your code, most of
+the scoring will be based on reading it (and your README).
+
+
+
+
+

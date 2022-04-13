@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="title_activity_display_dinner_menu">DisplayDinnerMenu</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="DINNER">DINNER</string>
+    <string name="BREAKFAST">BREAKFAST</string>
+</resources>

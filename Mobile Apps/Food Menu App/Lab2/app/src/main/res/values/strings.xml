@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Lab2</string>
+    <string name="Dinner">Dinner</string>
+    <string name="Breakfast">Breakfast</string>
+    <string name="Toast">Toast</string>
+    <string name="burrito">Burrito</string>
+    <string name="Vegan">Vegan</string>
+    <string name="Filet">Filet</string>
+    <string name="Salmon">Salmon</string>
+    <string name="Pasta">Pasta</string>
+    <string name="Pancake">Pancake</string>
+    <string name="Juice">Juice</string>
+</resources>

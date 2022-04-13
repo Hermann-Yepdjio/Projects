@@ -1,0 +1,6 @@
+Dimensions,classical_one_thread_one_element(clock()),classical_one_thread_one_row(clock()),classical_one_thread_one_column(clock()),classical_one_thread_one_element(get_time_of_day()),classical_one_thread_one_row(get_time_of_day()),classical_one_thread_one_column(get_time_of_day()),classical_one_thread_one_element(time()),classical_one_thread_one_row(time()),classical_one_thread_one_column(time()),double_linked_list_one_thread_one_row(clock()),double_linke_list_one_thread_one_row(get_time_of_day()),Double_linked_list_one_thread_one_row(time())
+100,2.705768,0.102807,0.100916,2.493022,0.04908,0.03948,2,0,0,0.221463,0.069639,0
+200,5.2741,0.175112,0.206422,5.052355,0.067726,0.070895,5,0,0,0.429035,0.143961,0
+300,7.65945,0.259578,0.286137,7.385074,0.096821,0.098356,10,0,0,0.715187,0.269355,0
+400,10.122552,0.353283,0.438392,9.880174,0.130182,0.16923,9,0,0,0.841919,0.2726,0
+500,12.532758,0.441633,0.489892,12.286872,0.16186,0.165132,12,1,0,1.101283,0.349637,0

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> ph Calculator </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#includedContent").load("SideBar.html");
+            });
+	     
+       </script>
+	</head>
+	<script>
+		$("#body").css("min-height", screen.height);
+	</script>
+<body>
+
+<div id="includedContent"></div>
+
+<style> 
+			input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button 
+			{
+ 				-webkit-appearance: none;
+    				margin: 0;
+			}
+ 
+			input[type="number"] 
+			{
+			    -moz-appearance: textfield;
+			}
+			html,body
+			{
+				background-color: rgb(200, 200, 200);
+				width: 100%;
+				height: 100%;
+				position:fixed;
+    			top:0;
+    			bottom:0;
+    			left:0;
+    			right:0;
+			}
+			h1
+			{
+				margin-bottom: 150px;
+				font-family: "Times New Roman", Times, Serif;
+				background-color: black;
+				font-size: 300%;
+				color: white;
+				position:relative;
+    				width:100%;
+				top: 0%;
+				left: 0%;
+			}
+			h2
+			{
+				font-family: "Times New Roman", Times, Serif;
+				color: white;
+				font-size:150%;
+				position: relative;
+				left:10%;
+			}
+			p
+			{
+				font-family: "Times New Roman", Times, Serif;
+				font-size: 100%;
+				position: relative;
+			}
+			label
+			{
+				font-family: "Times New Roman", Times, Serif;
+				font-size: 100%;
+				position:relative;
+				left: 10%;	
+			}
+			
+			#concentration, #formula, #ph
+			{
+				font-family: "Times New Roman", Times, Serif;
+				box-sizing: border-box;
+				border: 2% solid green;
+				font-size:  100%;
+				position: absolute;
+				left: 35%;
+				padding: 0;
+			}
+
+			button
+			{
+				font-family: "Times New Roman", Times, Serif;
+				border-radius: 15px;
+				color: white;
+				background-color: black;
+				font-size: 100%;
+				position: relative;
+				left: 32%;
+			}
+</style>
+
+<div class="w3-container" style = "position: relative; left: 185px">
+		<h1> pH Calculator </h1>
+		<div style=" background-color:black; width:740px; position: relative">
+			<h2> Fill in the fields below and click on calculate to display the result </h2>	
+		</div>
+		<form name= "myForm">
+			<label for="concentration">Enter Concentration in H3O+ (M):</label>
+			<input type="number" id="concentration" name="concentration"></input>
+		<p></p>
+			<label for= "formula">Enter chemical name / Formula:</label>
+			<input type="text" id="formula" name= "formula"></input>
+		<p></p>
+			
+		<br></br>
+		<p>
+			<button onClick = "pH()"> Calculate </button>
+			&nbsp; &nbsp;
+			<button onClick = "reset()">  Reset </button>
+		</p>
+		<label for="result"> Result: </label>
+		<input type="number" step= "0.01" id="ph" name="result" value=""></input>
+		</form>	
+</div>
+
+	<script>
+			function pH()
+			{
+	
+				var num1= document.myForm.concentration.value;
+				var result = -Math.log10((num1)).toFixed(2);
+				document.getElementById("ph").value= result;
+				event.preventDefault();
+			}
+			
+			function reset()
+			{
+				document.getElementById("myForm").reset();
+			}
+	</script>
+</body>
+</html> 

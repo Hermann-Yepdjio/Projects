@@ -1,0 +1,28 @@
+setwd("/media/hermann/Tonpi/tonpi/Collegecourses/CWU/Graduate School/Winter 2019/CS 567/Seminars/Seminar2")
+#install.packages("readxl")
+#library(readxl)
+data = read_excel("data.xlsx", col_names = FALSE)
+print(data)
+
+dataTotalRow <- nrow(data)
+beginRowData = 1
+X1 = data[beginRowData:dataTotalRow, 1]
+X2 = data[beginRowData:dataTotalRow, 2]
+X_table = data.frame(X1, X2)
+
+Y1 = data[beginRowData:dataTotalRow, 4]
+Y2 = data[beginRowData:dataTotalRow, 5]
+Y_table = data.frame(Y1, Y2)
+
+Z1 = data[beginRowData:dataTotalRow, 7]
+Z2 = data[beginRowData:dataTotalRow, 8]
+Z_table = data.frame(Z1, Z2)
+print(Z_table)
+
+#install.packages("ggplot2")
+library(ggplot2)
+#library(reshape)
+x11()
+myGraph <- ggplot(X_table, aes(x ="..1"))
+myGraph <- myGraph + geom_histogram() + labs(title = "X1 vs X2")
+print(myGraph)

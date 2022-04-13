@@ -1,0 +1,11 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Scatter plots}{2}
+\contentsline {section}{\numberline {3}Covariance}{3}
+\contentsline {section}{\numberline {4}Pearson's R and $R^2$}{3}
+\contentsline {paragraph}{Significance:}{4}
+\contentsline {section}{\numberline {5}Spearman's Rho}{4}
+\contentsline {paragraph}{Significance:}{4}
+\contentsline {section}{\numberline {6}Bootstrapping}{4}
+\contentsline {paragraph}{Significance}{5}
+\contentsline {section}{\numberline {7}conclusion}{5}

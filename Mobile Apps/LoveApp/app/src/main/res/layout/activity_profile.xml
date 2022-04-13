@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context="com.example.linconnu.loveapp.profile"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/picture_profile"
+        android:layout_width="116dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/tip_profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/name_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/name_profile"
+        android:layout_width="253dp"
+        android:layout_height="33dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/age_profile"
+        app:layout_constraintLeft_toRightOf="@+id/picture_profile"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/age_profile"
+        android:layout_width="246dp"
+        android:layout_height="33dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/interest_profile"
+        app:layout_constraintLeft_toRightOf="@+id/picture_profile"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_profile" />
+
+    <TextView
+        android:id="@+id/interest_profile"
+        android:layout_width="246dp"
+        android:layout_height="33dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/tip_profile"
+        app:layout_constraintLeft_toRightOf="@+id/picture_profile"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_profile" />
+
+    <TextView
+        android:id="@+id/tip_profile"
+        android:layout_width="277dp"
+        android:layout_height="35dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/message_profile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interest_profile" />
+
+    <ImageButton
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_profile"
+        app:srcCompat="@drawable/send" />
+
+    <EditText
+        android:id="@+id/message_profile"
+        android:layout_width="346dp"
+        android:layout_height="304dp"
+        android:background="@android:color/holo_blue_bright"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_send"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip_profile" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

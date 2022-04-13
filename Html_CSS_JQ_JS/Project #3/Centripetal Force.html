@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Centripetal Force Calculator </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#includedContent").load("SideBar.html");
+            });
+        </script>
+	</head>
+<body>
+
+<div id="includedContent"></div>
+
+<style> 
+			input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button 
+			{
+    				-webkit-appearance: none;
+    				margin: 0;
+			}
+ 
+			input[type="number"] 
+			{
+			    -moz-appearance: textfield;
+			}
+			html,body
+			{	
+				font-family: "Times New Roman", Times, Serif;
+				margin: 0;
+				background-color: rgb(200, 200, 200);
+				width: 100%;
+				height: 100%;
+				position:fixed;
+    				top:0;
+    				bottom:0;
+    				left:0;
+    				right:0;
+			}
+			h1
+			{
+				margin-bottom: 150px;
+				font-family: "Times New Roman", Times, Serif;
+				background-color: black;
+				font-size: 300%;
+				color: white;
+				position:relative;
+    				left:0%;
+				width:100%;
+				top: 0%;
+			}
+			h2
+			{
+				font-family: "Times New Roman", Times, Serif;
+				color: white;
+				font-size: 150%;
+				position: relative;
+				left: 10%;
+			}
+			p
+			{
+				font-family: "Times New Roman", Times, Serif;
+				font-size: 100%;
+				position: relative;
+			}
+			label
+			{
+				font-family: "Times New Roman", Times, Serif;
+				font-size: 100%;
+				position:relative;
+				left: 10%;	
+			}
+			
+			#mass, #radius, #velocity, #Centripetal_Force
+			{
+				font-family: "Times New Roman", Times, Serif;
+				box-sizing: border-box;
+				border: 2% solid green;
+				font-size:  100%;
+				position: absolute;
+				left: 35%;
+			}
+
+			button
+			{
+				font-family: "Times New Roman", Times, Serif;
+				border-radius: 15px;
+				color: white;
+				background-color: black;
+				font-size: 100%;
+				position: relative;
+				left: 32%;
+			}
+
+
+</style>
+
+<div class="w3-container" style = "position: relative; left: 185px">
+		<h1> Centripetal Force Calculator </h1>
+		<div style=" background-color:black; width:740px; position: relative">
+		<h2> Fill in the fields below and click on calculate to display the result </h2>	
+		</div>
+		<form name= "myForm">
+			<label for="mass">Enter mass (in kilogram):</label>
+			<input type="number" id="mass" name="mass"></input>
+		<p></p>
+			<label for= "radius">Enter radius (in meters):</label>
+			<input type="number" id="radius" name= "radius"></input>
+		<p></p>
+			<label for= "velocity"> Enter velocity (in meters/seconds):</label>
+			<input type="number" id="velocity" name="velocity"></input>
+		<p></p>
+			
+		<br></br>
+		<br></br>
+		<p>
+			<button onClick = "Centripetal()"> Calculate </button>
+			&nbsp; &nbsp; 
+			<button onClick = "reset()"> Reset </button>
+		</p>
+		<label for= "result"> Centripetal Force (in Newtons): </label>
+		<input type="number" step = "0.01" id="Centripetal_Force" name="result" value=""></input>
+		</form>	
+</div>
+
+	<script>
+			function Centripetal()
+			{
+				var num1= document.myForm.mass.value;
+				var num2= document.myForm.radius.value;
+				var num3= document.myForm.velocity.value;
+				var result = (num1*num3*num3/num2).toFixed(2);
+				document.getElementById("Centripetal_Force").value= result;
+				event.preventDefault();
+			}
+			
+			function reset()
+			{
+				document.getElementById("myForm").reset();
+			}
+	</script>
+</body>
+</html> 

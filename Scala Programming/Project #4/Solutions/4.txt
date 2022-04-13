@@ -1,0 +1,12 @@
+Consider the formal operational semantics rules presented in Lecture 3b. This question asks you to extend this set of rules and use the extended set to build an evaluation judgement derivation. Put your answers to both parts in a single file in either plain text (.txt) or .pdf format. For part (c), don’t worry about formatting your tree beautifully, but please make its layout clear and legible! You may wish to write your answer on paper and then scan it to pdf.
+
+(a) Write down a rule for a new expression form (before e1 e2) whose informal semantics are as follows: evaluate e1, remember the result value v, evaluate e2, throw away the result value, and then yield v as the overall value of the expression. For example, the expression (before a (:= a 42)) sets a to 42 and yields the old value of a as its result.
+
+(b) Write down a rule for a new expression form (alias x1 x2 e), whose informal semantics is as follows: make the newly created local variable x1 an alias to the existing variable x2, evaluate e in the resulting environment, and yield the resulting value. Note that alias is not the same as let: when two variables are aliased, they refer to the same location. (Note: A simple variable aliasing form like this is not very useful, but many real languages introduce aliasing less directly, e.g. through call-by-reference parameters.)
+
+(c) Write down the full derivation tree for the following judgment:
+
+⟨(let x 1 (+ (alias y x (before (:= y 3) (:= x (+ x 5)))) x)),∅,∅⟩⇓⟨11,∅⟩
+Use symbolic names (e.g., L1, L2, …) for locations. When writing concrete environments and stores, use set notation, e.g. {x -> L1,y -> L2} for the environment E where E(x) = L1 and E(y) = L2. Write ∅ or EMP for the empty environment and store. If the same environment or store occurs repeatedly in the tree (they will!) feel free to define abbreviations for them to keep the tree smaller and less repetitious.
+
+(Hint: Your completed tree should have 12 nodes.)

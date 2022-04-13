@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab3</string>
+    <string name="women_button">women_button</string>
+    <string name="men_button">men_button</string>
+</resources>

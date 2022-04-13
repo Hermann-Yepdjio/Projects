@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#includedContent").load("SideBar.html");
+            });
+        </script>
+</head>
+
+
+<style>
+body,h2,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+
+.w3-main{
+  margin-left: 180px;
+  margin-top: 0px;  
+  padding: 125px;
+  background-image: url("BorderImage.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  position: fixed; 
+  top: -105px;
+}
+
+.w3-third{
+  padding: 50px; 
+}
+
+h4{
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+h1{
+  color:white;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+img{
+  border-radius: 50px;
+}
+
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+<div id="includedContent"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main">
+
+<h1 style = "text-align: center; font-size: 75px;">Categories</h1>
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:0px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <a href = "#"><img src="Inertia.png" style="width:100%" onclick="onClick(this)" height="225" width="150" id = "inertia"></a>
+      <h4> Inertia </h4>
+      <a href = "pH_Calculator.html"><img src="pH.jpg" style="width:100%" onclick="onClick(this)"  height="225" width="150" id = "pH" href = "pH_Calculator.html"></a>
+      <h4> pH </h4>
+    </div>
+
+    <div class="w3-third">
+      <a href = "#"><img src="CentripetalForce.png" style="width:100%" onclick="onClick(this)" id = "centripital" height="225" width="150"></a>
+      <h4> Centripetal Force </h4>
+      <a href = "Molarity.html"><img src="Molarity.png" style="width:100%" onclick="onClick(this)" id = "molarity" height="225" width="150"></a>
+      <h4> Molarity </h4>
+    </div>
+    
+    <div class="w3-third">
+      <a href = "#"><img src="SimpleLevers.jpg" style="width:100%" onclick="onClick(this)" id = "simple" height="225" width="150"></a>
+      <h4> Simple Levers </h4>
+      <a href = "#"><img src="Gear.png" style="width:100%" onclick="onClick(this)" id = "account" height="225" width="150"></a>
+      <h4> Settings </h4>
+    </div>
+  </div>
+  
+
+
+
+</body>
+</html>
+

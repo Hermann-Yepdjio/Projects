@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="button_true">True</string>
+    <string name="button_false">False</string>
+    <string name="textF">Sydney is the capital of Australia</string>
+    <string name="Right_Message">Correct</string>
+    <string name="Wrong_Message">Nope</string>
+</resources>

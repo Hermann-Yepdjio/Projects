@@ -1,0 +1,81 @@
+AST with one node on each numbered line:
+(numbered breadth-first)
+----------------------------------------
+
+1:      fun y
+          |
+2:      fun g
+          |
+3:      let f
+        |    \___
+4:    fun x      \ 
+5:      |        _if__
+6:      @       / |   \ 
+7:      |\     @   \   \
+8:      | \    |\   @   \
+9:      |  |   | \  |\   <=
+10:     g  |   | |  | \   |\
+11:        +   | |  | |   | \
+12:        |\  f |  | |   | |
+13:        | \   y  | |   | |
+14:        | |      g |   | |
+15:        | |        3   | |
+16:        | |            y |
+17:        | |              0
+18:        x |
+19:          2
+
+
+
+Table of initially generated constraints:
+_________________________________________________________________
+Node # 	        | Rule          | Constraint                    |
+----------------+---------------+-------------------------------|
+1               | fun           | t1 = ty -> t2                 |
+2               | fun           | t2 = tg -> t3                 |
+3               | let           | t4 = tf and t3 = t5           |
+4               | fun           | t4 = tx -> t6                 |
+5               | if            | t7 = Bool and t5 = t8 = t9    |
+6               | app           | t10 = t11 -> t6               |
+7               | app           | t12 = t13 -> t7               |
+8               | app           | t14 = t15 -> t8               |
+9               | leq           | t9 = Bool and t16 = t17 = Int |
+10              | var           | t10 = tg                      |
+11              | plus          | t11 = t18 = t19 = Int         |
+12              | var           | t12 = tf                      |
+13              | var           | t13 = ty                      |
+14              | var           | t14 = tg                      |
+15              | int           | t15 = Int                     |
+16              | var           | t16 = ty                      |
+17              | int           | t17 = Int                     |
+18              | var           | t18 = tx                      |
+19              | int           | t19 = Int                     |
+-----------------------------------------------------------------
+
+
+Solution by inspection:
+-----------------------
+Note immediately that `t18 = tx`(from 18) and `t18 = Int`(from 11), so `tx = Int`. 
+Similarly, `ty = Int` (from 9 and 16). 
+
+Note that `t10 = tg` and `t10 = t11 -> t6`, and `t11 = Int` (from 6, 10, 11), so `tg = Int -> t6`.
+At this point, we can also conclude that `tf = tg = Int -> t6`, since `t12 = tf` and `tf = t4` and `t4 = Int -> t6` (from 3, 4, 6).
+
+To figure out what `t6` is, note that we also know that `t12 = tf`, and `t12 = t13 -> t7` (from 7, 12). And `t7 = Bool` (from 5), so `tf = t13 -> Bool = Int -> t6`. 
+From this we can conclude that `t13 = Int`, `t6 = Bool`, and `tf = tg = Int -> Bool`.
+
+Putting all of this together, the top-level expression has type `t1 = ty -> t2`.
+Substituting in `ty = Int`, and `t2 = tg -> t3`, we get `t1 = Int -> tg -> t3`.
+Finally, substituting in `t3 = t5 = t9 = Bool` and `tg = Int -> Bool`, we get `t1 = Int -> (Int -> Bool) -> Bool`.
+
+Summarizing, we have the following types for the identifiers:
+
+f,g   Int -> Bool
+x,y   Int
+
+and the type of the entire expression is
+
+t1 = Int -> (Int -> Bool) -> Bool
+
+
+

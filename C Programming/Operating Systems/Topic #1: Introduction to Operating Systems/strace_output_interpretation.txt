@@ -1,0 +1,13 @@
+1) execve:  execute program
+2) brk:   change data segment size
+3) access:   check user's permissions for a file
+4) mmap, munmap:   map or unmap files or devices into memory
+5) openat:   open and possibly create a file
+6) stat, fstat:   get file status
+7) close:   close a file descriptor
+8) read:   read from a file descriptor
+9) mprotect:   set protection on a region of memory
+10) arch_prctl:   set architecture-specific thread state
+11) getpid:   get process identification
+12) write:   send a message to another user
+13) exit_group:   exit all threads in a process

@@ -1,0 +1,19 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Result of the Experimentation}{2}
+\contentsline {subsection}{\numberline {2.1}Benchmark Using the C language}{2}
+\contentsline {subsubsection}{\numberline {2.1.1}Keeping the Dimensionality constant}{2}
+\contentsline {paragraph}{Observation}{2}
+\contentsline {subsubsection}{\numberline {2.1.2}Keeping the Power constant}{3}
+\contentsline {paragraph}{Observation}{3}
+\contentsline {subsection}{\numberline {2.2}Benchmark Using the R language}{4}
+\contentsline {subsubsection}{\numberline {2.2.1}Keeping the Dimensionality constant}{4}
+\contentsline {paragraph}{Observation}{4}
+\contentsline {subsubsection}{\numberline {2.2.2}Keeping the Power constant}{5}
+\contentsline {paragraph}{Observation}{5}
+\contentsline {subsection}{\numberline {2.3}C-classical vs R-Pure Classical}{6}
+\contentsline {subsubsection}{\numberline {2.3.1}Keeping the Dimensionality constant}{6}
+\contentsline {paragraph}{Observation}{6}
+\contentsline {subsubsection}{\numberline {2.3.2}Keeping the Power constant}{7}
+\contentsline {paragraph}{Observation}{7}
+\contentsline {section}{\numberline {3}Conclusion}{7}

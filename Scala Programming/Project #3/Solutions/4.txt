@@ -1,0 +1,47 @@
+Recall the very simple imperative language and set of rules used to illustrate axiomatic semantics in Lecture 2b. Recall that S ranges over statements, E ranges over expressions, and x ranges over variables. We write ^ for logical AND and ~ for logical NOT.
+
+Suppose this language is extended with some new statements, each of which is documented only by an axiomatic semantics rule. Your task is to figure out what each new statement does and write a short English description of it. You may find it useful to explain some of the new statements by giving an equivalent combination of existing statements.
+
+(a)
+
+
+-------------------------- (FUTZ)
+ {P[(x+1)/x]} futz x {P}
+
+(b)
+
+         P => R
+----------------------- (BAH)
+ {P ^ Q} bah x {Q ^ R}
+(c)
+
+  {R} S1 {Q}     {P} S2 {R}
+------------------------------(ABRACADABRA)
+ {P} abr S1 acada S2 bra {Q}
+(d)
+
+    {P} S1 {Q}   {Q ^ ~E} S2 {P} 
+-----------------------------------(PIFFLE)
+ {P} piffle S1 (E) S2 end {Q ^ E}
+(e)
+
+  {P ^ E1} S1 {Q}     {P ^ E2} S2 {Q}   
+         (P ^ ~E1 ^ ~E2) => Q
+--------------------------------------(FLAPJACK)
+   {P} flap (E1) S1 (E2) S2 jack {Q} 
+
+
+
+
+
+
+(a) futz x increments variable x by 1; equivalent to x := x+1.
+
+(b) Taking P and R to be True and simplifying the pre- and post-conditions, this lets us deduce {Q} bah x {Q} for any Q. This implies that bah x does nothing; it is equivalent to skip.
+
+(c) abr S1 acada S2 bra executes S2 and then S1; equivalent to S2; S1 or to the after statement introduced in the study questions.
+
+(d) piffle S1 (E) S2 end executes S1 and then loops executing S2; S1 until E becomes true; it is equivalent to the statement
+loop S1 exitif (E) S2 end described in lecture.
+
+(e) flap (E1) S1 (E2) S2 jack is intended to represent a non-deterministic “guarded if” statement. If E1 evaluates to true and E2 evaluates to false, it executes S1; if E2 evaluates to true and E1 to false, it executes S2; if both E1 and E2 evaluate to false, the statement does nothing. If both E1 and E2 evaluate to true, exactly one of S1 or S2 (not both) is chosen for evaluation. Moreover, we don’t know which one will be chosen: if we did, we could write a stronger rule. (For example, if S1 is always chosen over S2, the second hypothesis of this rule could be {P ^ ~E1 ^ E2} S2 {Q}.) So the choice is somehow non-deterministic (or determined by things not visible in the syntax of the rule).

@@ -1,0 +1,8 @@
+Consider the following expression written in the toy expression language used in lecture 7b. Draw an abstract syntax tree for the expression and number the nodes. Then, using the method shown in lecture, write down the typing constraints implied by each node. Solve the constraints (using unification or just by inspection) to determine the types of each identifier used in the expression, and the type of the entire expression. (You do not need to state the types of the intermediate nodes.) Assume the possible types are Int, Bool and function types written type1 -> type2 (where type1 and type2 are types).
+
+Submit your answer in either plain text or pdf. As usual, don’t worry about formatting the tree nicely; just make the node numbering clear.
+
+(fun y
+  (fun g
+    (let f (fun x (@ g (+ x 2)))
+           (if (@ f y) (@ g 3) (<= y 0)))))

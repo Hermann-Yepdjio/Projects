@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title> Contact Usuuu </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $("#includedContent").load("SideBar.html");
+            });
+        </script>
+
+        <style>
+    span.error {
+        color: red;
+        font-size: 75%;
+    }
+
+
+    .div{
+     align:center;
+    }
+
+    #submit {
+    background-color: #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:10px;
+    color: black;
+    font-family: 'Oswald';
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    }
+    
+    div.box{
+        border-style:solid;
+        border-width:1px;
+        border-radius:25px;
+        background:white;
+        margin-top:0;
+        width:700px;
+    }
+    
+    div.innerbox{
+        margin-left:160px;
+        padding: 5px;
+    }
+
+    span.title{
+        font-size:12pt;
+        color:black;
+        padding:5px;
+    }
+    
+    #submit:hover {
+    border: none;
+    background:darkgreen;
+    -webkit-box-shadow: 0px 0px 1px #777;
+    -moz-box-shadow: 0px 0px 1px #777;
+    }
+    </style>
+
+    </head>
+    <body style="background-color: #484848">
+    <div id="includedContent"></div>
+
+<div class="container" style = "margin-left: 180px" >
+<div class="box">
+<h1 style="margin-left:160px;">Contact Us</h1>
+
+<div class="innerbox">
+
+    <div>
+    <form method="post">  
+    <span class="title">Name:</span><br><input type="text" name="name"><span class="error"></span><br>
+    <span class="title">E-mail:</span><br><input type="text" name="email"><span class="error"></span><br>
+    <span class="title">Text:</span><br><textarea rows="10" cols="50"></textarea>
+    <p><span class="error">* required field.</span><p>
+    <br><input type="submit" name="submit"  id="submit" value="Submit">  
+    </form>
+    </div>
+    
+</div>
+</div>
+</div>
+
+    </body>
+</html>

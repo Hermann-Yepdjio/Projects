@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>SciCalc Industries</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-black w3-xxlarge" style="width:180px" >
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-home"><font size = "6.5"> Home </font></i></a>
+
+  <a href="#" class="w3-bar-item w3-button" onclick = "myAccFunc1()"><i class="fa fa-balance-scale"><font size = "3"> &nbspPhysics </font></i></a> 
+  <div id="demoAcc1" class="w3-hide w3-white w3-card-2">
+    <a href="#" class="w3-bar-item w3-button"><font size = "2"> Inertia </font></a>
+    <a href="#" class="w3-bar-item w3-button"><font size = "2"> Centripital Force </font></a>
+    <a href="#" class="w3-bar-item w3-button"><font size = "2"> Simple Levers </font></a>
+  </div>
+
+  <a href="#" class="w3-bar-item w3-button" onclick = "myAccFunc2()"><i class="fa fa-flask"> <font size = "3"> &nbsp &nbspChemistry </font></i></a> 
+  <div id="demoAcc2" class="w3-hide w3-white w3-card-2">
+    <a href="#" class="w3-bar-item w3-button"><font size = "2"> Titrations </font></a>
+    <a href="#" class="w3-bar-item w3-button"><font size = "2"> Molarity </font></a>
+  </div>
+
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-group"> <font size = "3">&nbsp Community </font></i></a>
+
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"><font size = "3">&nbsp &nbsp &nbspContact Us </font></i></a> 
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user-circle"><font size = "3"> Account </font></i></a> 
+
+<style> 
+input[type=text] {
+    width: 180px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: "#";
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+</style>
+<body>
+<form>
+  <input type="text" name="search" placeholder= 'Search'>
+</form>
+</body>
+</div>
+
+<div style="margin-left:180px">
+
+<div class="w3-container">
+<h2>Sidebar Icons</h2>
+<p>We have some icons that are pretty lit over there on the left.</p>
+</div>
+
+</div>
+
+<script>
+function myAccFunc1() {
+    var x = document.getElementById("demoAcc1");
+    var y = document.getElementById("demoAcc2")
+    if (x.className.indexOf("w3-show") == -1) {
+        y.className = y.className.replace('w3-show',"");
+        y.previousElementSibling.className = 
+        y.previousElementSibling.className.replace(" w3-green", "");
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else { 
+        x.className = x.className.replace('w3-show',"");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+}
+
+function myAccFunc2() {
+    var x = document.getElementById("demoAcc2");
+    var y = document.getElementById("demoAcc1");
+    if (x.className.indexOf("w3-show") == -1) {
+        y.className = y.className.replace('w3-show',"");
+        y.previousElementSibling.className = 
+        y.previousElementSibling.className.replace(" w3-green", "");
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-green";
+    } else { 
+        x.className = x.className.replace('w3-show',"");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-green", "");
+    }
+}
+
+</script>
+</body>
+</html>

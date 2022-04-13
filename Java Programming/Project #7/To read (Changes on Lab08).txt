@@ -1,0 +1,6 @@
+in question 3 the functions are :
+	boolean add(E value)
+	void add(int ix, E value)
+and not:
+	boolean add (int ix, E value)
+	void add (E value)

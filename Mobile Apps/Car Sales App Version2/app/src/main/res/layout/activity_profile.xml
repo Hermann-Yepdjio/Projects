@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context="com.example.linconnu.carapp2.profile"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="189dp"
+        android:layout_height="115dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_launcher"
+        app:layout_constraintRight_toLeftOf="@+id/profile_price"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/picture_1"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <ImageView
+        android:id="@+id/picture_1"
+        android:layout_width="175dp"
+        android:layout_height="95dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/ic_launcher"
+        app:layout_constraintRight_toLeftOf="@+id/picture_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/picture_3"
+        app:layout_constraintTop_toBottomOf="@+id/profile_price" />
+
+    <ImageView
+        android:id="@+id/picture_2"
+        android:layout_width="175dp"
+        android:layout_height="95dp"
+        android:adjustViewBounds="true"
+        android:scaleType = "centerCrop"
+        app:srcCompat="@mipmap/ic_launcher"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/picture_1"
+        app:layout_constraintBottom_toTopOf="@+id/picture_4"
+        app:layout_constraintTop_toBottomOf="@+id/profile_price" />
+
+    <ImageView
+        android:id="@+id/picture_3"
+        android:layout_width="175dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/picture_4"
+        app:layout_constraintTop_toBottomOf="@+id/picture_1"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/picture_4"
+        android:layout_width="175dp"
+        android:layout_height="95dp"
+        android:layout_marginBottom="250dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/picture_3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture_2"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="195dp"
+        android:layout_height="36dp"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/profile_year"
+        app:layout_constraintLeft_toRightOf="@+id/picture"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_year"
+        android:layout_width="195dp"
+        android:layout_height="36dp"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/profile_price"
+        app:layout_constraintLeft_toRightOf="@+id/picture"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name" />
+
+    <TextView
+        android:id="@+id/profile_price"
+        android:layout_width="195dp"
+        android:layout_height="36dp"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/picture_2"
+        app:layout_constraintLeft_toRightOf="@+id/picture"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_year" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,19 @@
+FactorsP1 Test Data:
+
+Standard test:
+85 = ( 17 ) * ( 5 )
+There have been 3 square root operations performed to obtain this result
+
+Large number test:
+125454335 = ( 79151 ) * ( 1585 )
+There have been 29169 square root operations performed to obtain this result
+
+Prime number test:
+911 can't be factored
+There have been 426 square root operations performed to obtain this result
+
+Empty file test:
+Exception in thread "main" java.util.NoSuchElementException: Sorry the file is empty
+	at Factor_P1.ReadFile(Factor_P1.java:31)
+	at Factor_P1.main(Factor_P1.java:9)
+

@@ -1,0 +1,3 @@
+#!/bin/bash
+javac PolyProductsP1.java
+javac Factor_P1.java

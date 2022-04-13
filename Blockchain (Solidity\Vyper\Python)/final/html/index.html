@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>My To Do List</title>
+    <link rel=stylesheet type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class=page>
+    <h2>Create a Task</h2>
+      <div>Account: <span id="account"></span></div>
+      <div>
+            <label for="name">Name: </label>
+            <input id='name' type='text' name='name'>
+            <label for="description">Description: </label>
+            <input id='description' type='text_long' name='description'>
+            <button id="add">Add</button>
+      </div>
+    <h2>To Do List</h2>
+      <div id="tasks"></div>
+
+    <h2>Completed Tasks</h2>
+      <div id="c_tasks"></div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script type="text/javascript" src="todolist.js"></script>
+    <script type="text/javascript">
+      update_tasks();
+      updateAccount();
+      update_c_tasks();
+    </script>
+    </div>
+  </body>
+</html>
