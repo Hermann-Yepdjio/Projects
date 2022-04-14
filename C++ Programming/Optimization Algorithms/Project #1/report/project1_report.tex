@@ -1,0 +1,171 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+
+\begin{document}
+	
+	\begin{titlepage}
+		
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+		
+		\center % Center everything on the page
+		
+		%----------------------------------------------------------------------------------------
+		%	HEADING SECTIONS
+		%----------------------------------------------------------------------------------------
+		
+		\textsc{\LARGE Central Washington University}\\[1.5cm] % Name of your university/college
+		\textsc{\Large Optimization}\\[0.5cm] % Major heading such as course name
+		\textsc{\large Spring 2019}\\[0.5cm] % Minor heading such as course title
+		
+		%----------------------------------------------------------------------------------------
+		%	TITLE SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\HRule \\[0.4cm]
+		{ \huge \bfseries Project 1 Report}\\[0.4cm] % Title of your document
+		\HRule \\[1.5cm]
+		
+		%----------------------------------------------------------------------------------------
+		%	AUTHOR SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushleft} \large
+				\emph{Author:}\\
+				Hermann \textsc{Yepdjio} % Your name
+			\end{flushleft}
+		\end{minipage}
+		~
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushright} \large
+				\emph{Supervisor:} \\
+				Dr. Donald \textsc{Davendra} % Supervisor's Name
+			\end{flushright}
+		\end{minipage}\\[1cm]
+		
+		% If you don't want a supervisor, uncomment the two lines below and remove the section above
+		%\Large \emph{Author:}\\
+		%John \textsc{Smith}\\[3cm] % Your name
+		
+		%----------------------------------------------------------------------------------------
+		%	DATE SECTION
+		%----------------------------------------------------------------------------------------
+		
+		{\large \today}\\ % Date, change the \today to a set date if you want to be precise
+		
+		%----------------------------------------------------------------------------------------
+		%	LOGO SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\includegraphics[width=12cm]{CWU-Logo.png}\\[.5cm] % Include a department/university logo - this will require the graphicx package
+		
+		%----------------------------------------------------------------------------------------
+		
+		\vfill % Fill the rest of the page with whitespace
+		
+	\end{titlepage}
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	
+	
+	\section{Introduction}
+	For this assignment, we were asked to experiment simulating 18 standard benchmark functions of different properties. Those functions are Schwefel, De Jong 1, Rosenbrock's Saddle, Rastrigin, Griewangk, Sine Envelope Sine Wave, Stretch V Sine Wave, Ackley One, Ackley Two, Egg Holder, Rana, Pathological, Michalewicz, Master's Cosine Wave, Quartic, Levy, Step and Alpine. The goal was to observe for each function, how close to its global optima we could get by solving it using Monte Carlo techniques. Therefore, for each function we generated multiple vectors (90) of pseudo random numbers (using Mersenne Twister) and of 3 different dimensions(10, 20, 30) and passed them to the function one at the time while recording the results (fitness) each time. We performed a statistical analysis on the results we obtained and the outcome is described in the next section.
+	
+	\newpage
+	
+	\section{Results}	
+	\captionof{table}{Statistics for each function (dimension = 10)} \label{tab:title}
+	
+	\begin{table}[htb]
+		\begin{tabular}{llllll}
+			function        & Average           & Std\_Dev      & Range       & Median      & Time  \\
+			Schwefel        & 4283.638          & 494.9550998   & 2308.18     & 4204.76     & 0.157 \\
+			De Jong 1       & 33089.2133333333  & 5982.250116   & 24670.7     & 33481.25    & 0.071 \\
+			Rosenbrock      & 17608329333.3333  & 4785879607.43 & 18981610000 & 17723100000 & 0.088 \\
+			Rastrigin       & 298208.833333333  & 53597.852191  & 218767      & 299582.5    & 0.109 \\
+			Griewangk       & 207.807433333333  & 37.3891692557 & 154.192     & 210.258     & 0.117 \\
+			Sine Envelope   & -4.48550966666667 & 1.1560828184  & 4.69342     & -4.45479    & 0.169 \\
+			Stretch V Sine  & 3.14885           & 0             & 0           & 3.14885     & 0.105 \\
+			Ackley One    & 181.847366666667  & 18.76554      & 73.783      & 183.498     & 0.116 \\
+			Ackley Two      & 181.742333333333  & 7.7985926     & 33.699      & 183.106     & 0.14  \\
+			Egg Holder      & -27.3037533333334 & 903.71623     & 3554.81     & -153.5975   & 0.101 \\
+			Rana            & 94.1003833333333  & 641.32826     & 2243.06     & 175.601     & 0.16  \\
+			Pathological    & 4.21475233333333  & 0.769448      & 3.4947      & 4.492165    & 0.112 \\
+			Michalewicz     & -1.18668163333333 & 0.6353523     & 2.268685    & -1.08452    & 0.186 \\
+			Masters’ Cosine & -4.86272          & 0             & 0           & -4.86272    & 0.106 \\
+			Quartic         & 1129954966.66667  & 458761279.35  & 1664917000  & 1073065000  & 0.159 \\
+			Levy            & 11589.6813333333  & 5467.2745217  & 23630.6     & 11293.25    & 0.186 \\
+			Step            & 30382.47          & 4760.3707363  & 17312.8     & 30500.85    & 0.072 \\
+			Alpine          & 280.1586          & 58.62958033   & 224.441     & 291.1945    & 0.078
+		\end{tabular}
+	\end{table}
+
+	\newpage
+	\captionof{table}[h]{Statistics for each function (dimension = 20)} \label{tab:title}
+	
+	\begin{table}[htb]
+		\begin{tabular}{llllll}
+			function        & Average           & Std\_Dev      & Range       & Median      & Time  \\
+			Schwefel        & 8469.37766666667  & 722.92524     & 3056.12     & 8338.535    & 0.118 \\
+			De Jong 1       & 63096.4966666667  & 9767.0119     & 42558.7     & 63488.55    & 0.057 \\
+			Rosenbrock      & 34865516666.6667  & 7929547146.96 & 38379900000 & 35711800000 & 0.087 \\
+			Rastrigin       & 1135525.53333333  & 176040.165    & 772508      & 1140705     & 0.116 \\
+			Griewangk       & 395.3531          & 61.0438051    & 265.992     & 397.8035    & 0.154 \\
+			Sine Envelope   & -9.96001333333333 & 1.58812826    & 7.30569     & -9.722965   & 0.199 \\
+			Stretch V Sine  & 6.64758           & 0             & 0           & 6.64758     & 0.2   \\
+			Ackley One    & 374.232833333333  & 34.8422094    & 140.14      & 374.2865    & 0.06  \\
+			Ackley Two      & 382.6739          & 13.4719138    & 48.635      & 383.442     & 0.083 \\
+			Egg Holder      & 294.970266666667  & 1248.54406    & 4885.07     & 286.9655    & 0.059 \\
+			Rana            & 127.088606666667  & 769.1705668   & 3104.01     & 380.8865    & 0.1   \\
+			Pathological    & 8.92762933333333  & 0.910227378   & 3.88566     & 9.20033     & 0.062 \\
+			Michalewicz     & -2.29808193       & 1.126899208   & 5.1339641   & -2.18149    & 0.11  \\
+			Masters’ Cosine & -10.2657          & 0             & 0           & -10.2657    & 0.056 \\
+			Quartic         & 4069130000        & 1078980112.42 & 4767720000  & 4096895000  & 0.062 \\
+			Levy            & 24877.7966666667  & 8657.441526   & 45741.5     & 25381.3     & 0.066 \\
+			Step            & 60780.8633333333  & 9397.8886986  & 42134.6     & 61260.9     & 0.02  \\
+			Alpine          & 587.351333333333  & 96.154026404  & 393.406     & 586.1425    & 0.035
+		\end{tabular}
+	\end{table}
+	
+	\newpage
+	\captionof{table}[h]{Statistics for each function (dimension = 30)} \label{tab:title}
+	
+	\begin{table}[htb]
+		\begin{tabular}{llllll}
+			function        & Average           & Std\_Dev      & Range       & Median      & Time  \\
+			Schwefel        & 12813.65          & 733.93873     & 3195.7      & 12992.7     & 0.057 \\
+			De Jong 1       & 95843.0466666667  & 13815.41690   & 60202.3     & 96594.4     & 0.03  \\
+			Rosenbrock      & 53646780000       & 12818067409.9 & 49701800000 & 53175400000 & 0.043 \\
+			Rastrigin       & 2584870.66666667  & 373495.438571 & 1617080     & 2616670     & 0.077 \\
+			Griewangk       & 600.019033333333  & 86.34614216   & 376.262     & 604.715     & 0.082 \\
+			Sine Envelope   & -15.16765         & 2.3984072933  & 8.9231      & -15.341     & 0.1   \\
+			Stretch V Sine  & 10.1463           & 0             & 0           & 10.1463     & 0.07  \\
+			Ackley One      & 572.734366666667  & 51.0948993    & 226.316     & 571.4805    & 0.082 \\
+			Ackley Two      & 583.923133333333  & 15.4512797    & 53.671      & 588.041     & 0.113 \\
+			Egg Holder      & 236.7915          & 1667.8102771  & 6632.31     & 192.5345    & 0.154 \\
+			Rana            & 270.114989333333  & 826.91904560  & 2986.409    & 169.82954   & 0.15  \\
+			Pathological    & 13.6565633333333  & 1.0332884183  & 4.3248      & 13.91615    & 0.164 \\
+			Michalewicz     & -3.43252033333333 & 1.1152965712  & 4.44007     & -3.54023    & 0.157 \\
+			Masters’ Cosine & -15.6688          & 0             & 0           & -15.6688    & 0.078 \\
+			Quartic         & 8758279666.66667  & 2032056263.2  & 8108290000  & 8693130000  & 0.116 \\
+			Levy            & 39016.0066666667  & 13153.486027  & 64329.4     & 37431.25    & 0.088 \\
+			Step            & 93851.8833333333  & 14756.100701  & 64393.2     & 93868.7     & 0.017 \\
+			Alpine          & 902.070433333333  & 136.08823505  & 566.02      & 900.95      & 0.044
+		\end{tabular}
+	\end{table}
+
+	\section{Results Analysis}
+	When analyzing the results above, we can see that the fitness we obtained for most functions using Monte Carlo techniques, is nowhere near their global optima. That's the case for functions such as Schwefel, De Jong 1, Step etc... However, the experimentation also produced some good results for few functions which are Sine envelope, Stretch V Sine Wave etc...
+	
+	\section{Conclusion}
+		Since we obtained a bad fitness in average for each function during the experimentation, we can conclude that using Monte Carlo is a bad approach to optimize the standard benchmark functions that were provided to us.
+	
+\end{document}

@@ -1,0 +1,376 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\begin{document}
+	
+	\begin{titlepage}
+		
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+		
+		\center % Center everything on the page
+		
+		%----------------------------------------------------------------------------------------
+		%	HEADING SECTIONS
+		%----------------------------------------------------------------------------------------
+		
+		\textsc{\LARGE Central Washington University}\\[1.5cm] % Name of your university/college
+		\textsc{\Large CS 471 OPTIMIZATION}\\[0.5cm] % Major heading such as course name
+		\textsc{\large Spring 2019}\\[0.5cm] % Minor heading such as course title
+		
+		%----------------------------------------------------------------------------------------
+		%	TITLE SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\HRule \\[0.4cm]
+		{ \huge \bfseries Project 2 Report}\\[0.4cm] % Title of your document
+		\HRule \\[1.5cm]
+		
+		%----------------------------------------------------------------------------------------
+		%	AUTHOR SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushleft} \large
+				\emph{Author:}\\
+				Hermann \textsc{Yepdjio} % Your name
+			\end{flushleft}
+		\end{minipage}
+		~
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushright} \large
+				\emph{Supervisor:} \\
+				Dr. Donald \textsc{Davendra} % Supervisor's Name
+			\end{flushright}
+		\end{minipage}\\[1cm]
+		
+		% If you don't want a supervisor, uncomment the two lines below and remove the section above
+		%\Large \emph{Author:}\\
+		%John \textsc{Smith}\\[3cm] % Your name
+		
+		%----------------------------------------------------------------------------------------
+		%	DATE SECTION
+		%----------------------------------------------------------------------------------------
+		
+		{\large \today}\\ % Date, change the \today to a set date if you want to be precise
+		
+		%----------------------------------------------------------------------------------------
+		%	LOGO SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\includegraphics[width=12cm]{CWU-Logo.png}\\[.5cm] % Include a department/university logo - this will require the graphicx package
+		
+		%----------------------------------------------------------------------------------------
+		
+		\vfill % Fill the rest of the page with whitespace
+		
+	\end{titlepage}
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	
+	
+	\section{Introduction}
+	For project 2, we were asked to optimize 18 standard benchmark functions namely Schwefel, De Jong 1, Rosenbrock's Saddle, Rastrigin, Griewangk, Sine Envelope Sine Wave, Stretch V Sine Wave, Ackley One, Ackley Two, Egg Holder, Rana, Pathological, Michalewicz, Master's Cosine Wave, Quartic, Levy, Step and Alpine. For this purpose, we've been given 3 optimization algorithms to be implemented then applied to those functions. Those algorithms are: Blind Search (Also Known as Random Walk), Local Search and Iterative Local Search. After implementing them, we ran them on each of the 18 functions using randomly generated data. Statistics for each algorithm were computed and stored in a tabular form and they will be discussed then analyzed later on in this report. However, for run time purposes, we considered making some adjustments to the local search algorithm and those adjustments will be discussed in the next section of this report.
+	
+	\section{Adjustments to the Local Search Algorithm}
+		\subsection{Problem Encountered and experimentation}
+			After implementing the Local Search Algorithm as described in class, we experimented with it on the set of functions that were to be optimized and observed that elements of the X\_new vector for some functions such as Rosenbrock's Saddle were almost always out of range which caused the program to run forever because trying to find an X vector that would produce X\_new with all elements satisfying the constraints. Following this, we ran another experiment trying to observe how  long it would take to generate a vector X that would produce X\_new with its first k (k = 1, 2, 3, 4, 5,...) elements being within the range. We observed that finding X for k = 4 is the best we could do in a reasonable amount of time (about 5 minutes).
+		\subsection{Adjustment}
+			following the small experimentation mentioned in the previous sub-section, we implemented the Local Search algorithm following the process:
+			\begin{itemize}
+				\item step 1: generate a matrix of 30 rows (each row representing a solution for the function being optimized),
+				\item step 2:find the best solution out of those 30 using Blind Search,
+				\item step 3: try to generate X\_new with the first 4 elements satisfying the constraints
+					\subitem if successful, the remaining elements of X\_new that do not satisfy the constraints are replaced with the lowest bound if they are smaller than the lowest bound or the highest bound if they are higher than the highest bound.
+					\subitem if not successful go back to step 1
+				\item step 4: compute the fitness of X\_new and compare with the fitness of X. 
+					\subitem If smaller replace X with X\_new then try step 3 again
+						\subsubitem If successful, repeat step 4
+						\subsubitem Else stop the search
+					\subitem Else stop the search
+			\end{itemize}
+		
+	\section{Results}
+	
+		\subsection{Blind Search - Random Walk}
+		
+		\begin{table}[h]
+			\centering
+			\caption{Dimension 10 Statistics}
+			\begin{tabular}{llllll} 
+				\hline
+				\textbf{functions}      & \textbf{Average} & \textbf{Std\_Dev} & \textbf{Range} & \textbf{Median} & \textbf{Time}  \\ 
+				\hline
+				Schwefel                & 2791.980667      & 291.0776924       & 962.2          & 2756.72         & 3.995          \\
+				De Jong 1               & 16525.905        & 3617.690385       & 13096.2        & 16929.85        & 2.678          \\
+				Rosenbrock's Saddle     & 4624192567       & 2200245473        & 9393093000     & 4288820000      & 3.04           \\
+				Rastrigin               & 148664.7167      & 25816.99628       & 117756.8       & 145918.5        & 3.624          \\
+				Griewangk               & 201.40451        & 54.26135096       & 208.219        & 201.822         & 3.206          \\
+				Sine Envelope Sine Wave & -6.922858667     & 0.615849057       & 2.77131        & -6.848245       & 1.48           \\
+				Stretch V Sine Wave     & 3.14885          & 0                 & 0              & 3.14885         & 1.519          \\
+				Ackley One              & 117.9502767      & 12.70077553       & 61.5507        & 119.178         & 1.424          \\
+				Ackley Two              & 155.9257667      & 10.47668637       & 36.86          & 160.025         & 1.518          \\
+				Egg Holder              & -1925.865933     & 493.5229002       & 2454.252       & -1872.6         & 1.323          \\
+				Rana                    & -1225.0452       & 271.6587289       & 1159.908       & -1189.075       & 1.784          \\
+				Pathological            & 2.832005333      & 0.385649688       & 1.41638        & 2.89944         & 1.353          \\
+				Michalewicz             & -3.042443667     & 0.44436953        & 1.659          & -2.974425       & 1.964          \\
+				Masters Cosine Wave  & -4.86272         & 0                 & 0              & -4.86272        & 1.259          \\
+				Quartic                 & 262190090        & 97677136.01       & 448506000      & 237735500       & 1.403          \\
+				Levy                    & 3656.484         & 1295.195831       & 4943.7         & 3334.03         & 1.868          \\
+				Step                    & 13138.277        & 3374.336256       & 13117.89       & 13282.75        & 0.881          \\
+				Alpine                  & 131.9117867      & 26.00687297       & 121.9316       & 136.1985        & 1.019          \\
+				\hline
+			\end{tabular}
+		\end{table}
+		\newpage
+		\begin{table}
+			\centering
+			\caption{Dimension 20 Statistics}
+			\begin{tabular}{llllll} 
+				\hline
+				\textbf{functions}      & \textbf{Average} & \textbf{Std\_Dev} & \textbf{Range} & \textbf{Median} & \textbf{Time}  \\ 
+				\hline
+				Schwefel                & 6527.171         & 497.5107961       & 2439.71        & 6525.445        & 2.252          \\
+				De Jong 1               & 41533.22         & 4928.844575       & 17352.1        & 40880.45        & 1.444          \\
+				Rosenbrock's Saddle     & 16472465333      & 4250017316        & 17796330000    & 16453050000     & 1.715          \\
+				Rastrigin               & 740840.4333      & 82896.64718       & 345145         & 741591.5        & 1.944          \\
+				Griewangk               & 429.6261         & 80.48347128       & 321.087        & 436.6345        & 2.179          \\
+				Sine Envelope Sine Wave & -12.62089        & 0.806189877       & 3.9751         & -12.50965       & 3.103          \\
+				Stretch V Sine Wave     & 6.64758          & 0                 & 0              & 6.64758         & 2.841          \\
+				Ackley One              & 284.143          & 19.37699629       & 111.196        & 286.921         & 2.915          \\
+				Ackley Two              & 347.7151         & 14.88748464       & 72.136         & 351.511         & 4.082          \\
+				Egg Holder              & -2604.351        & 581.5784116       & 2357.24        & -2658.305       & 2.788          \\
+				Rana                    & -1564.0985       & 421.523801        & 1521.263       & -1584.385       & 3.689          \\
+				Pathological            & 6.641959         & 0.560611522       & 2.49116        & 6.656755        & 2.774          \\
+				Michalewicz             & -4.823475667     & 0.77204586        & 3.22257        & -4.859355       & 4.006          \\
+				Masters Cosine Wave  & -10.2657         & 0                 & 0              & -10.2657        & 2.373          \\
+				Quartic                 & 1642857300       & 458365001.9       & 1757455000     & 1635585000      & 2.564          \\
+				Levy                    & 11734.552        & 3214.621751       & 12775.78       & 12098.1         & 3.711          \\
+				Step                    & 37725.31         & 6347.605771       & 30349.6        & 38781.55        & 1.604          \\
+				Alpine                  & 398.6774667      & 34.33233515       & 138.598        & 402.2505        & 2.073          \\
+				\hline
+			\end{tabular}
+		\end{table}
+	
+	\newpage
+	
+	\begin{table}
+		\centering
+		\caption{Dimension 30 Statistics}
+		\begin{tabular}{llllll} 
+			\hline
+			\textbf{functions}      & \textbf{Average} & \textbf{Std\_Dev} & \textbf{Range} & \textbf{Median} & \textbf{Time}  \\ 
+			\hline
+			Schwefel                & 10366.28867      & 548.6806894       & 2203.76        & 10435.5         & 2.991          \\
+			De Jong 1               & 67672.15         & 4818.68658        & 22768          & 68222.3         & 2.246          \\
+			Rosenbrock's Saddle     & 28848830000      & 4560099220        & 1.64E+10       & 28823650000     & 2.594          \\
+			Rastrigin               & 1831957          & 157146.7475       & 657190         & 1831840         & 2.931          \\
+			Griewangk               & 647.8761333      & 119.2873485       & 487.709        & 655.329         & 3.865          \\
+			Sine Envelope Sine Wave & -18.77424667     & 1.018582934       & 4.7194         & -18.59065       & 5.917          \\
+			Stretch V Sine Wave     & 10.1463          & 0                 & 0              & 10.1463         & 4.971          \\
+			Ackley One              & 456.8230333      & 32.99021513       & 147.591        & 460.3595        & 4.716          \\
+			Ackley Two              & 542.6945333      & 16.00234794       & 75.443         & 547.5085        & 5.407          \\
+			Egg Holder              & -3635.889333     & 672.5280213       & 2362.62        & -3508.42        & 4.028          \\
+			Rana                    & -2139.410467     & 675.999664        & 2935.746       & -2023.875       & 6              \\
+			Pathological            & 11.203864        & 0.65777826        & 2.59885        & 11.3231         & 4.671          \\
+			Michalewicz             & -6.143787333     & 0.654736173       & 2.6587         & -6.04617        & 7.811          \\
+			Masters Cosine Wave  & -15.6688         & 0                 & 0              & -15.6688        & 3.921          \\
+			Quartic                 & 4718703333       & 907832406.2       & 3339690000     & 4626180000      & 4.925          \\
+			Levy                    & 20984.54         & 3144.005418       & 14523.2        & 21149.05        & 5.313          \\
+			Step                    & 66257.93333      & 5486.357712       & 25835.5        & 66916.6         & 2.293          \\
+			Alpine                  & 657.0533667      & 74.66909381       & 317.88         & 660.826         & 3.646          \\
+			\hline
+		\end{tabular}
+	\end{table}
+
+\newpage
+
+		\subsection{Local Search}
+		\begin{table}[h]
+			\centering
+			\caption{Dimension 10 Statistics}
+			\begin{tabular}{llllll} 
+				\hline
+				\textbf{functions}       & \textbf{Average} & \textbf{Std\_Dev} & \textbf{Range} & \textbf{Median} & \textbf{Time}  \\ 
+				\hline
+				Schwefel                & 58.58366667      & 320.8759573       & 1757.51        & 0               & 12.058         \\
+				De Jong 1               & 0.001008333      & 0.005522869       & 0.03025        & 0               & 2.15           \\
+				Rosenbrock's Saddle     & 11798766.67      & 64624506.54       & 353963000      & 0               & 13602.2        \\
+				Rastrigin               & 4214.333333      & 23082.85432       & 126430         & 0               & 18.753         \\
+				Griewangk               & 10.23153333      & 56.04041605       & 306.946        & 0               & 0.085          \\
+				Sine Envelope Sine Wave & -0.211197667     & 1.156777261       & 6.33593        & 0               & 0.066          \\
+				Stretch V Sine Wave     & 0.104961667      & 0.574898725       & 3.14885        & 0               & 0.065          \\
+				Ackley One              & 3.660633333      & 20.05011451       & 109.819        & 0               & 0.814          \\
+				Ackley Two              & 5.2554           & 28.78501129       & 157.662        & 0               & 0.081          \\
+				Egg Holder              & -127.2736667     & 697.1065821       & 3818.21        & 0               & 38.261         \\
+				Rana                    & -58.382          & 319.7713835       & 1751.46        & 0               & 58.586         \\
+				Pathological            & 0.101255333      & 0.554598301       & 3.03766        & 0               & 0.105          \\
+				Michalewicz             & -0.102954        & 0.563902282       & 3.08862        & 0               & 0.104          \\
+				Masters Cosine Wave  & -0.162090667     & 0.887807145       & 4.86272        & 0               & 0.062          \\
+				Quartic                 & 10003166.67      & 54789600.3        & 300095000      & 0               & 139.273        \\
+				Levy                    & 133.3613333      & 730.4501057       & 4000.84        & 0               & 0.089          \\
+				Step                    & 0.092407667      & 0.506137635       & 2.77223        & 0               & 0.486          \\
+				Alpine                  & 5.3369           & 29.23140517       & 160.107        & 0               & 0.051          \\
+				\hline
+			\end{tabular}
+		\end{table}
+	\newpage
+		\begin{table}[h]
+			\centering
+			\caption{Dimension 20 Statistics}
+			\begin{tabular}{llllll} 
+				\hline
+				\textbf{functions}      & \textbf{Average} & \textbf{Std\_Dev} & \textbf{Range} & \textbf{Median} & \textbf{Time}  \\ 
+				\hline
+				Schwefel                & 150.7426667      & 825.6515891       & 4522.28        & 0               & 28.716         \\
+				De Jong 1               & 0.001999083      & 0.01094943        & 0.0599725      & 0               & 1.783          \\
+				Rosenbrock's Saddle     & 254812666.7      & 1395666455        & 7644380000     & 0               & 47623.3        \\
+				Rastrigin               & 28142.73333      & 154144.0988       & 844282         & 0               & 131.54         \\
+				Griewangk               & 10.63853333      & 58.26964685       & 319.156        & 0               & 0.117          \\
+				Sine Envelope Sine Wave & -0.4249          & 2.327273147       & 12.747         & 0               & 0.158          \\
+				Stretch V Sine Wave     & 0.221586         & 1.213676506       & 6.64758        & 0               & 0.193          \\
+				Ackley One              & 7.901266667      & 43.27701986       & 237.038        & 0               & 9.043          \\
+				Ackley Two              & 10.52043333      & 57.62278651       & 315.613        & 0               & 0.341          \\
+				Egg Holder              & -334.96          & 1834.651479       & 10048.8        & 0               & 14.048         \\
+				Rana                    & -124.6566667     & 682.7726828       & 3739.7         & 0               & 114.051        \\
+				Pathological            & 0.16766          & 0.91831164        & 5.0298         & 0               & 0.173          \\
+				Michalewicz             & -0.147975667     & 0.810496106       & 4.43927        & 0               & 0.19           \\
+				Masters Cosine Wave  & -0.34219         & 1.87425182        & 10.2657        & 0               & 0.118          \\
+				Quartic                 & 49359000         & 270350377.2       & 1480770000     & 0               & 268.579        \\
+				Levy                    & 290.802          & 1592.788152       & 8724.06        & 0               & 0.181          \\
+				Step                    & 0.195082667      & 1.068511771       & 5.85248        & 0               & 1.53           \\
+				Alpine                  & 11.61853333      & 63.63732792       & 348.556        & 0               & 0.114          \\
+				\hline
+			\end{tabular}
+		\end{table}
+	\newpage
+		\begin{table}[h]
+			\centering
+			\caption{Dimension 30 Statistics}
+			\begin{tabular}{llllll} 
+				\hline
+				functions               & \textbf{Average} & \textbf{Std\_Dev} & \textbf{Range} & \textbf{Median} & \textbf{Time}  \\ 
+				\hline
+				Schwefel                & 348.4533333      & 1908.557509       & 10453.6        & 0               & 0.814          \\
+				De Jong 1               & 0.003014107      & 0.016508942       & 0.0904232      & 0               & 3.776          \\
+				Rosenbrock's Saddle     & 630606666.7      & 3453974962        & 18918200000    & 0               & 170847         \\
+				Rastrigin               & 51346.33333      & 281235.4501       & 1540390        & 0               & 850.817        \\
+				Griewangk               & 20.37886667      & 111.6196497       & 611.366        & 0               & 0.412          \\
+				Sine Envelope Sine Wave & -0.64229         & 3.517967215       & 19.2687        & 0               & 0.247          \\
+				Stretch V Sine Wave     & 0.33821          & 1.852452462       & 10.1463        & 0               & 0.244          \\
+				Ackley One              & 4.318066667      & 23.65102518       & 129.542        & 0               & 368.024        \\
+				Ackley Two              & 16.78063333      & 91.91131406       & 503.419        & 0               & 1.653          \\
+				Egg Holder              & -126.1816667     & 691.1254518       & 3785.45        & 0               & 0.466          \\
+				Rana                    & -188.9333333     & 1034.830485       & 5668           & 0               & 1847.03        \\
+				Pathological            & 0.315669333      & 1.728992146       & 9.47008        & 0               & 0.226          \\
+				Michalewicz             & -0.23299         & 1.276138787       & 6.9897         & 0               & 0.315          \\
+				Masters Cosine Wave  & -0.522293333     & 2.860718403       & 15.6688        & 0               & 0.211          \\
+				Quartic                 & 116780000        & 639630402.7       & 3503400000     & 0               & 3530.86        \\
+				Levy                    & 508.04           & 2782.649681       & 15241.2        & 0               & 0.251          \\
+				Step                    & 0.297757667      & 1.630885907       & 8.93273        & 0               & 3.333          \\
+				Alpine                  & 14.5425          & 79.65255293       & 436.275        & 0               & 0.159          \\
+				\hline
+			\end{tabular}
+		\end{table}
+	\newpage
+		\subsection{Iterative Local Search}
+		\begin{table}[h]
+			\centering
+			\caption{Dimension 10 Statistics}
+			\begin{tabular}{llllll} 
+				\hline
+				\textbf{functions}      & \textbf{Average} & \textbf{Std\_Dev} & \textbf{Range} & \textbf{Median} & \textbf{Time}  \\ 
+				\hline
+				Schwefel                & 2003.243333      & 474.2111143       & 1786.18        & 1919.765        & 261.032        \\
+				De Jong 1               & 0.028802637      & 0.003862826       & 0.0191893      & 0.03025         & 45.636         \\
+				Rosenbrock's Saddle     & 2630588033       & 2006474690        & 10097728000    & 2094715000      & 452716         \\
+				Rastrigin               & 140977.8267      & 33841.44393       & 138324.1       & 143023          & 198.816        \\
+				Griewangk               & 191.76939        & 51.19340152       & 195.0953       & 192.833         & 2.032          \\
+				Sine Envelope Sine Wave & -6.939682        & 0.713454114       & 3.39156        & -6.84324        & 1.712          \\
+				Stretch V Sine Wave     & 3.14885          & 0                 & 0              & 3.14885         & 1.742          \\
+				Ackley One              & 80.06737667      & 22.8015399        & 101.0331       & 83.3242         & 190.95         \\
+				Ackley Two              & 145.7989         & 9.034239465       & 43.696         & 145.394         & 10.09          \\
+				Egg Holder              & -3789.828667     & 871.01063         & 3586.89        & -4003.63        & 861.046        \\
+				Rana                    & -2523.165333     & 438.0029619       & 2036.1         & -2514.12        & 3408.66        \\
+				Pathological            & 2.533137         & 0.582381215       & 1.66895        & 2.84279         & 2.378          \\
+				Michalewicz             & -3.167197333     & 0.522815259       & 2.32004        & -3.03604        & 3.053          \\
+				Masters Cosine Wave  & -4.86272         & 0                 & 0              & -4.86272        & 1.601          \\
+				Quartic                 & 205903215.3      & 134721802.8       & 595511840      & 212273500       & 4469.49        \\
+				Levy                    & 3529.281         & 1341.583186       & 5591.29        & 3477.88         & 2.478          \\
+				Step                    & 2.742326         & 0.034906845       & 0.11254        & 2.77223         & 12.526         \\
+				Alpine                  & 112.87565        & 37.74860018       & 128.3744       & 115.07          & 1.464          \\
+				\hline
+			\end{tabular}
+		\end{table}
+	\newpage
+		\begin{table}[h]
+			\centering
+			\caption{Dimension 20 Statistics}
+			\begin{tabular}{llllll} 
+				\hline
+				\textbf{functions}      & \textbf{Average} & \textbf{Std\_Dev} & \textbf{Range} & \textbf{Median} & \textbf{Time}  \\ 
+				\hline
+				Schwefel                & 5349.959333      & 833.0708793       & 3215.12        & 5427.575        & 88.168         \\
+				De Jong 1               & 0.05861557       & 0.003440556       & 0.0144963      & 0.06049525      & 128.441        \\
+				Rosenbrock's Saddle     & 13890126000      & 4353422851        & 13696690000    & 13879200000     & 2083430        \\
+				Rastrigin               & 679651.0667      & 118911.6049       & 403302         & 709955.5        & 4251.21        \\
+				Griewangk               & 401.0995333      & 88.40290025       & 409.522        & 376.792         & 4.832          \\
+				Sine Envelope Sine Wave & -12.92433        & 0.902936084       & 3.97           & -12.7076        & 4.524          \\
+				Stretch V Sine Wave     & 6.64758          & 0                 & 0              & 6.64758         & 4.848          \\
+				Ackley One              & 108.84064        & 61.77663165       & 289.4516       & 97.21155        & 2354.53        \\
+				Ackley Two              & 322.5091333      & 11.07080453       & 50.513         & 323.639         & 19.793         \\
+				Egg Holder              & -6305.350333     & 1772.180963       & 6634.7         & -6368.3         & 2049.19        \\
+				Rana                    & -4174.622667     & 1437.45537        & 4448.15        & -4881.995       & 6065.86        \\
+				Pathological            & 6.662634         & 0.728605562       & 3.16817        & 6.83328         & 4.897          \\
+				Michalewicz             & -4.703353        & 0.80069119        & 3.38948        & -4.642095       & 6.553          \\
+				Masters Cosine Wave  & -10.2657         & 0                 & 0              & -10.2657        & 4.584          \\
+				Quartic                 & 1536148800       & 457643739.1       & 1819939000     & 1515630000      & 17005          \\
+				Levy                    & 10592.45333      & 2298.647743       & 10042.47       & 10707.9         & 6.561          \\
+				Step                    & 5.830438333      & 0.036700114       & 0.1668         & 5.85248         & 41.501         \\
+				Alpine                  & 335.3355667      & 76.88795167       & 321.078        & 335.2905        & 2.813          \\
+				\hline
+			\end{tabular}
+		\end{table}
+	\newpage
+	\begin{table}[h]
+		\centering
+		\caption{Dimension 30 Statistics}
+		\begin{tabular}{llllll} 
+			\hline
+			\textbf{functions}      & \textbf{Average} & \textbf{Std\_Dev} & \textbf{Range} & \textbf{Median} & \textbf{Time}  \\ 
+			\hline
+			Schwefel                & 8524.176333      & 1534.019548       & 5645.07        & 8900.215        & 531.589        \\
+			De Jong 1               & 0.08841921       & 0.004873262       & 0.0204715      & 0.09064685      & 257.946        \\
+			Rosenbrock's Saddle     & 30261086667      & 5284273518        & 20748900000    & 31175950000     & 5027350        \\
+			Rastrigin               & 1807029.333      & 218190.8544       & 962950         & 1844870         & 22638.3        \\
+			Griewangk               & 624.0755667      & 102.2444293       & 468.442        & 617.383         & 8.409          \\
+			Sine Envelope Sine Wave & -18.74105333     & 0.938625765       & 4.1451         & -18.7994        & 8.013          \\
+			Stretch V Sine Wave     & 10.1463          & 0                 & 0              & 10.1463         & 7.366          \\
+			Ackley One              & 134.70534        & 61.93493793       & 246.6545       & 123.982         & 7887.24        \\
+			Ackley Two              & 509.1312         & 17.83768659       & 72.902         & 511.361         & 39.245         \\
+			Egg Holder              & -8374.537333     & 2328.901041       & 8591.22        & -8846.365       & 3427.19        \\
+			Rana                    & -5716.058        & 2287.012655       & 7621.78        & -6208.22        & 25106.8        \\
+			Pathological            & 10.77505467      & 0.900178638       & 3.51734        & 11.07975        & 8.148          \\
+			Michalewicz             & -6.438007333     & 0.898783791       & 3.2804         & -6.27621        & 10.194         \\
+			Masters Cosine Wave  & -15.6688         & 0                 & 0              & -15.6688        & 7.349          \\
+			Quartic                 & 4610232667       & 889375037.1       & 4112990000     & 4864860000      & 26865.2        \\
+			Levy                    & 17516.24667      & 3715.052894       & 14714.9        & 16791.6         & 10.186         \\
+			Step                    & 8.912498         & 0.032293924       & 0.14115        & 8.93273         & 87.146         \\
+			Alpine                  & 507.1146         & 120.48491         & 365.012        & 491.329         & 5.231          \\
+			\hline
+		\end{tabular}
+	\end{table}
+	\newpage
+	\section{analysis}
+	From the results above, we can see that 
+		\begin{itemize}
+			\item Blind Search produced better results than what we obtained in project1 and it took more time to run
+			\item A a huge improvement in the results for Local search especially for functions such as De Jong 1 and Step. However functions such as Rosenbrock's Saddle have an important increase in running time as the dimension increases.
+			\item A huge improvement in the results for Iterative Local Search especially for functions such as De Jong 1 and Step. However functions such as Rosenbrock's Saddle have an important increase in running time as the dimension increases.
+		\end{itemize}
+\end{document}

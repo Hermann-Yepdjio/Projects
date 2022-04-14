@@ -1,0 +1,2 @@
+dimensions,num_sols,num_gen,num_exp,c1,c2,k,gamma,B0,alpha,HMCR,PAR,bw
+30,500,500,30,0.3,0.7,0.1,1,0.2,0.5,0.1,0.1,0.2

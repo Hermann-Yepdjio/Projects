@@ -1,0 +1,10 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Adjustments to the Local Search Algorithm}{2}
+\contentsline {subsection}{\numberline {2.1}Problem Encountered and experimentation}{2}
+\contentsline {subsection}{\numberline {2.2}Adjustment}{2}
+\contentsline {section}{\numberline {3}Results}{3}
+\contentsline {subsection}{\numberline {3.1}Blind Search - Random Walk}{3}
+\contentsline {subsection}{\numberline {3.2}Local Search}{4}
+\contentsline {subsection}{\numberline {3.3}Iterative Local Search}{7}
+\contentsline {section}{\numberline {4}analysis}{8}

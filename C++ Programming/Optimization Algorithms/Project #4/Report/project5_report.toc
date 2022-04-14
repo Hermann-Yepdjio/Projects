@@ -1,0 +1,16 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Results}{3}
+\contentsline {subsection}{\numberline {2.1}Flow Shop Scheduling}{3}
+\contentsline {subsubsection}{\numberline {2.1.1}Gantt Charts}{3}
+\contentsline {subsubsection}{\numberline {2.1.2}Results for Flow Shop Scheduling}{14}
+\contentsline {subsubsection}{\numberline {2.1.3}Analysis}{17}
+\contentsline {subsection}{\numberline {2.2}Flow Shop Scheduling With Blocking}{18}
+\contentsline {subsubsection}{\numberline {2.2.1}Gantt Charts}{18}
+\contentsline {subsubsection}{\numberline {2.2.2}Results for Flow Shop Scheduling with Blocking}{29}
+\contentsline {subsubsection}{\numberline {2.2.3}Analysis}{32}
+\contentsline {subsection}{\numberline {2.3}Flow Shop Scheduling with No Wait}{33}
+\contentsline {subsubsection}{\numberline {2.3.1}Gantt Charts}{33}
+\contentsline {subsubsection}{\numberline {2.3.2}Results for Flow Shop Scheduling with No Wait}{44}
+\contentsline {subsubsection}{\numberline {2.3.3}Analysis}{47}
+\contentsline {section}{\numberline {3}Conclusion}{48}

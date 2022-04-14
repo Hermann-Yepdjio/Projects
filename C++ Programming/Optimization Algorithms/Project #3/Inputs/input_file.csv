@@ -1,0 +1,2 @@
+dimensions,num_sols,num_gen,num_exp,num_trnmt,cr,er,m_range,m_rate,m_precision,F,lambda
+30,200,100,50,100,0.8,0.2,0.1,0.005,5,0.5,0.5

@@ -1,0 +1,14 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Results}{2}
+\contentsline {subsection}{\numberline {2.1}Genetic Algorithm}{2}
+\contentsline {subsubsection}{\numberline {2.1.1}Values used for the parameters}{2}
+\contentsline {subsubsection}{\numberline {2.1.2}Statistics}{3}
+\contentsline {subsubsection}{\numberline {2.1.3}Statistics analysis}{3}
+\contentsline {subsubsection}{\numberline {2.1.4}plots}{4}
+\contentsline {subsubsection}{\numberline {2.1.5}Plots analysis}{8}
+\contentsline {subsection}{\numberline {2.2}Differential Evolution Algorithm}{8}
+\contentsline {subsubsection}{\numberline {2.2.1}Values used for the parameters}{8}
+\contentsline {subsubsection}{\numberline {2.2.2}Statistics}{9}
+\contentsline {subsubsection}{\numberline {2.2.3}Statistics Analysis}{14}
+\contentsline {section}{\numberline {3}Conclusion}{15}

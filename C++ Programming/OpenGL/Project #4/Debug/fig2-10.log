@@ -1,0 +1,6 @@
+﻿cl : Command line warning D9007: '/Gm' requires '/Zi or /ZI'; option ignored
+  fig2-10.CPP
+fig2-10.CPP(311): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdlib.h(1266): note: see declaration of '_sleep'
+  fig2-10.vcxproj -> E:\tonpi\College courses\CWU\CS 440\HomeWork\HW#4\Program 1\.\Debug\fig2-10.exe
+  fig2-10.vcxproj -> .\Debug\fig2-10.pdb (Full PDB)

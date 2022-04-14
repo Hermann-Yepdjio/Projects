@@ -1,0 +1,19 @@
+label,low_bound,hi_bound
+Schwefel,-512,512
+De Jong 1,-100,100
+Rosenbrock's Saddle,-100,100
+Rastrigin,-30,30
+Griewangk,-500,500
+Sine Envelope Sine Wave,-30,30
+Stretch V Sine Wave,-30,30
+Ackley One,-32,32
+Ackley Two,-32,32
+Egg Holder,-500,500
+Rana,-500,500
+Pathological,-100,100
+Michalewicz,0,3.141592654
+Masters’ Cosine Wave,-30,30
+Quartic,-100,100
+Levy,-10,100
+Step,-100,100
+Alpine,-100,100
