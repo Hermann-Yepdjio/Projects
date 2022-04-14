@@ -1,0 +1,4 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Results}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Problem 1}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Problem 2}{2}{subsection.1.2}

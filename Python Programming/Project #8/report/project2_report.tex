@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[colorlinks]{hyperref}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\begin{document}
+	
+	\begin{titlepage}
+		
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+		
+		\center % Center everything on the page
+		
+		%----------------------------------------------------------------------------------------
+		%	HEADING SECTIONS
+		%----------------------------------------------------------------------------------------
+		
+		\textsc{\LARGE Central Washington University}\\[1.5cm] % Name of your university/college
+		\textsc{\Large Introduction to Computer Security}\\[0.5cm] % Major heading such as course name
+		\textsc{\large Spring 2019}\\[0.5cm] % Minor heading such as course title
+		
+		%----------------------------------------------------------------------------------------
+		%	TITLE SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\HRule \\[0.4cm]
+		{ \huge \bfseries Project 2 Report}\\[0.4cm] % Title of your document
+		\HRule \\[1.5cm]
+		
+		%----------------------------------------------------------------------------------------
+		%	AUTHOR SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushleft} \large
+				\emph{Author:}\\
+				Hermann \textsc{Yepdjio} % Your name
+			\end{flushleft}
+		\end{minipage}
+		~
+		\begin{minipage}{0.4\textwidth}
+			\begin{flushright} \large
+				\emph{Instructor:} \\
+				Dr. Razvan \textsc{Andonie} % Supervisor's Name
+			\end{flushright}
+		\end{minipage}\\[1cm]
+		
+		% If you don't want a supervisor, uncomment the two lines below and remove the section above
+		%\Large \emph{Author:}\\
+		%John \textsc{Smith}\\[3cm] % Your name
+		
+		%----------------------------------------------------------------------------------------
+		%	DATE SECTION
+		%----------------------------------------------------------------------------------------
+		
+		{\large \today}\\ % Date, change the \today to a set date if you want to be precise
+		
+		%----------------------------------------------------------------------------------------
+		%	LOGO SECTION
+		%----------------------------------------------------------------------------------------
+		
+		\includegraphics[width=12cm]{CWU-Logo.png}\\[.5cm] % Include a department/university logo - this will require the graphicx package
+		
+		%----------------------------------------------------------------------------------------
+		
+		\vfill % Fill the rest of the page with whitespace
+		
+	\end{titlepage}
+	\newpage
+	\tableofcontents
+	\newpage
+	
+	
+	
+	\section{Results}
+		\subsection{Part 1}
+			Alice's RSA public key  is (N, e) = (33, 3) and her private key is d = 7\\
+			a)\\
+			
+				if Bob encrypts the message M = 19 using Alice's public key, the cipher text C is \\
+				C = $M^{e}$ mod N = $19^{3}$ = 6859 = 28 mod 33. {\color{red} C = 28.} \\
+				Alice can decrypt C to obtain M by doing the following \\
+				M = $C^{d}$ mod N = $28^{7}$ = 13492928512 = 19 mod 33. {\color{red} M = 19}\\\\
+			b)\\
+			
+				If S is the result when Alice  digitally signs the message M = 25, then\\
+				S = $M^{d}$ mod N = $25^{7}$ = 6103515625 = 31 mod 33 {\color{red} S = 31}\\\\
+				
+				If Bob receives M ans S, to verify the signature he just have to unsign S using Alice's public key and see if he obtains M as follow\\
+				M = $\{S\}_{alice}$ = $31^{3}$ = 29791 = 25 mod 33 {\color{red} M = 25} 
+				
+		
+		\subsection{Part 2}
+			
+			Public Key = (18, 30, 7, 26) and n = 47\\
+			
+			a) Find the private key, assuming m = 6\\\\
+				x.6 mod 47 = 18  $\equiv$ x = 3.\\
+				x.6 mod 47 = 30  $\equiv$ x = 5.\\
+				x.6 mod 47 = 7  $\equiv$ x = 9.\\
+				x.6 mod 47 = 26  $\equiv$ x = 20.\\
+				
+				{\color{red} private key = (3, 5, 9, 20)}\\\\
+				
+			b) Encryption of M = 1101 (given in binary)\\
+			
+				18 + 30 + 26 = 74 = {\color{red} 27 mod 47}
+				
+			\subsection{part 3}
+			Output after running the C code:\\
+			Point P = (2 , 7) is on the elliptic curve E.\\
+			What Alice sent to Bob is : (153 , 36)\\
+			What Bob sent to Alice is : (103 , 153)\\
+			The shared secret is : (137 , 54)\\
+			
+				
+		
+		\section{Observations}
+		It was more convenient to solve Part 1 and part 2 of this assignment by hand while it was easier to solve part 3 by writing a program that would do it.
+	
+	
+\end{document}

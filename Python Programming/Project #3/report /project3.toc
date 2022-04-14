@@ -1,0 +1,9 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Experimentation Process}{2}
+\contentsline {subsection}{\numberline {2.1}Sequential Search Vs Map Reduce}{2}
+\contentsline {subsection}{\numberline {2.2}Varying the Number of Cores}{2}
+\contentsline {section}{\numberline {3}Results}{3}
+\contentsline {subsection}{\numberline {3.1}Sequential Search VS Map Reduce}{3}
+\contentsline {subsection}{\numberline {3.2}Varying the number of cores}{3}
+\contentsline {section}{\numberline {4}conclusion}{5}

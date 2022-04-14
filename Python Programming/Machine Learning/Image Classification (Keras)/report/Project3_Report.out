@@ -1,0 +1,6 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Results for Experimentation Using Training and Testing Sets}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Increasing the Number of Convolution Layers and the Number of Epochs}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Increasing the Batch Size and the Number of Epochs}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Result of Experimentation Using Ten Folds Cross Validation}{}% 5
+\BOOKMARK [1][-]{section.4}{Conclusion}{}% 6

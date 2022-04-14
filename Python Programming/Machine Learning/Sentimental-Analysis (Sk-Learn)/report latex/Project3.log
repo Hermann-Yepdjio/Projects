@@ -1,0 +1,1148 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.21)  5 MAR 2019 10:29
+entering extended mode
+**./Project3.tex
+(Project3.tex
+LaTeX2e <2018-12-01>
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.c
+ls"
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.cl
+o"
+File: size10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfigure\subf
+igure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen103
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen104
+\subfiglabelskip=\skip46
+\c@subfigure=\count88
+\c@lofdepth=\count89
+\c@subtable=\count90
+\c@lotdepth=\count91
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/subfigure\subf
+igure.cfg")
+\subfig@top=\skip47
+\subfig@bottom=\skip48
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.st
+y"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count92
+\float@exts=\toks14
+\float@box=\box27
+\@float@everytoks=\toks15
+\@floatcapt=\box28
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\array.st
+y"
+Package: array 2018/11/13 v2.4j Tabular extension package (FMi)
+\col@sep=\dimen105
+\ar@mcellbox=\box29
+\extrarowheight=\dimen106
+\NC@list=\toks16
+\extratabsurround=\skip49
+\backup@length=\skip50
+\ar@cellbox=\box30
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graph
+icx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyva
+l.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graph
+ics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.
+sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\g
+raphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\p
+dftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmat
+h.sty"
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstex
+t.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen
+.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen109
+))
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy
+.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen110
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn
+.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box31
+\strutbox@=\box32
+\big@size=\dimen111
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
+\dotsspace@=\muskip10
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
+\tag@help=\toks19
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
+\andhelp@=\toks20
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
+\@envbody=\toks21
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/blindtext\blin
+dtext.sty"
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\xspace.s
+ty"
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count105
+\c@Blindtext=\count106
+\c@blind@countparstart=\count107
+\blind@countxx=\count108
+\blindtext@numBlindtext=\count109
+\blind@countyy=\count110
+\c@blindlist=\count111
+\c@blindlistlevel=\count112
+\c@blindlist@level=\count113
+\blind@listitem=\count114
+\c@blind@listcount=\count115
+\c@blind@levelcount=\count116
+\blind@mathformula=\count117
+\blind@Mathformula=\count118
+\c@blind@randomcount=\count119
+\c@blind@randommax=\count120
+\c@blind@pangramcount=\count121
+\c@blind@pangrammax=\count122
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\mathpaz
+o.sty"
+Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup4
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.s
+ty"
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def
+"
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\micr
+otype.sty"
+Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
+\MT@toks=\toks23
+\MT@count=\count123
+LaTeX Info: Redefining \textls on input line 793.
+\MT@outer@kern=\dimen118
+LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
+\MT@listname@count=\count124
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\micr
+otype-pdftex.def"
+File: microtype-pdftex.def 2018/01/14 v2.7a Definitions specific to pdftex (RS)
+
+LaTeX Info: Redefining \lsstyle on input line 913.
+LaTeX Info: Redefining \lslig on input line 913.
+\MT@outer@space=\skip54
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\micr
+otype.cfg"
+File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
+))
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.
+sty"
+Package: babel 2018/11/13 3.27 The Babel package
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch
+.def"
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.
+cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\
+english.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.
+def"
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count125
+\U@D=\dimen119
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbab
+el.def")
+\bbl@dirlevel=\count126
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geome
+try.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifp
+df.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifv
+tex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxe
+tex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count127
+\Gm@cntv=\count128
+\c@Gm@tempcnt=\count129
+\Gm@bindingoffset=\dimen120
+\Gm@wd@mp=\dimen121
+\Gm@odd@mp=\dimen122
+\Gm@even@mp=\dimen123
+\Gm@layoutwidth=\dimen124
+\Gm@layoutheight=\dimen125
+\Gm@layouthoffset=\dimen126
+\Gm@layoutvoffset=\dimen127
+\Gm@dimlist=\toks24
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geome
+try.cfg"))
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\captio
+n.sty"
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\captio
+n3.sty"
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen128
+\captionmargin@=\dimen129
+\captionwidth=\dimen130
+\caption@tempdima=\dimen131
+\caption@indent=\dimen132
+\caption@parindent=\dimen133
+\caption@hangindent=\dimen134
+)
+\c@caption@flags=\count130
+\c@ContinuedFloat=\count131
+Package caption Info: float package is loaded.
+Package caption Info: subfigure package is loaded.
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\bookt
+abs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen135
+\lightrulewidth=\dimen136
+\cmidrulewidth=\dimen137
+\belowrulesep=\dimen138
+\belowbottomsep=\dimen139
+\aboverulesep=\dimen140
+\abovetopsep=\dimen141
+\cmidrulesep=\dimen142
+\cmidrulekern=\dimen143
+\defaultaddspace=\dimen144
+\@cmidla=\count132
+\@cmidlb=\count133
+\@aboverulesep=\dimen145
+\@belowrulesep=\dimen146
+\@thisruleclass=\count134
+\@lastruleclass=\count135
+\@thisrulewidth=\dimen147
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumi
+tem.sty"
+Package: enumitem 2019/01/14 v3.7 Customized lists
+\labelindent=\skip55
+\enit@outerparindent=\dimen148
+\enit@toks=\toks25
+\enit@inbox=\box33
+\enit@count@id=\count136
+\enitdp@description=\count137
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/abstract\abstr
+act.sty"
+Package: abstract 2009/06/08 v1.2a configurable abstracts
+\abstitleskip=\skip56
+\absleftindent=\skip57
+\absrightindent=\skip58
+\absparindent=\skip59
+\absparsep=\skip60
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\title
+sec.sty"
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box34
+\beforetitleunit=\skip61
+\aftertitleunit=\skip62
+\ttl@plus=\dimen149
+\ttl@minus=\dimen150
+\ttl@toksa=\toks26
+\titlewidth=\dimen151
+\titlewidthlast=\dimen152
+\titlewidthfirst=\dimen153
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\block
+.tss"
+File: block.tss 2016/03/15
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyhdr\fancy
+hdr.sty"
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip63
+\f@nch@O@elh=\skip64
+\f@nch@O@erh=\skip65
+\f@nch@O@olh=\skip66
+\f@nch@O@orh=\skip67
+\f@nch@O@elf=\skip68
+\f@nch@O@erf=\skip69
+\f@nch@O@olf=\skip70
+\f@nch@O@orf=\skip71
+)
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 63.
+
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titling\titlin
+g.sty"
+Package: titling 2009/09/04 v2.1d maketitle typesetting
+\thanksmarkwidth=\skip72
+\thanksmargin=\skip73
+\droptitle=\skip74
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyper
+ref.sty"
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hob
+sub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hob
+sub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxho
+ok.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvopt
+ions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen154
+\Hy@linkcounter=\count138
+\Hy@pagecounter=\count139
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1en
+c.def"
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count140
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyper
+ref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count141
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen155
+\Fld@menulength=\count142
+\Field@Width=\dimen156
+\Fld@charsize=\dimen157
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count143
+\c@Item=\count144
+\c@Hfootnote=\count145
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdft
+ex.def"
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count146
+\c@bookmark@seq@number=\count147
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerun
+filecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip75
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
+ngs.sty"
+\lst@mode=\count148
+\lst@gtempboxa=\box35
+\lst@token=\toks27
+\lst@length=\count149
+\lst@currlwidth=\dimen158
+\lst@column=\count150
+\lst@pos=\count151
+\lst@lostspace=\dimen159
+\lst@width=\dimen160
+\lst@newlines=\count152
+\lst@lineno=\count153
+\lst@maxwidth=\dimen161
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmi
+sc.sty"
+File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
+\c@lstnumber=\count154
+\lst@skipnumbers=\count155
+\lst@framebox=\box36
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
+ngs.cfg"
+File: listings.cfg 2018/09/02 1.7 listings configuration
+))
+Package: listings 2018/09/02 1.7 (Carsten Heinz)
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color
+.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\c
+olor.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstla
+ng1.sty"
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+) (Project3.aux
+
+LaTeX Warning: Label `fig:lowmutation' multiply defined.
+
+
+LaTeX Warning: Label `fig:lowmutation' multiply defined.
+
+
+LaTeX Warning: Label `fig:lowmutation' multiply defined.
+
+
+LaTeX Warning: Label `fig:lowmutation' multiply defined.
+
+
+LaTeX Warning: Label `fig:lowmutation' multiply defined.
+
+
+LaTeX Warning: Label `list:highmutation' multiply defined.
+
+
+LaTeX Warning: Label `fig:lowmutation' multiply defined.
+
+
+LaTeX Warning: Label `list:highmutation' multiply defined.
+
+)
+\openout1 = `Project3.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 122.
+LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Try loading font information for T1+pplx on input line 122.
+
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1pplx.
+fd"
+File: t1pplx.fd 2004/09/06 font definitions for T1/pplx.
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pd
+f.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count156
+\scratchdimen=\dimen162
+\scratchbox=\box37
+\nofMPsegments=\count157
+\nofMParguments=\count158
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count159
+\MPscratchDim=\dimen163
+\MPnumerator=\count160
+\makeMPintoPDFobject=\count161
+\everyMPtoPDFconversion=\toks29
+)
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epsto
+pdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfex
+t.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+LaTeX Info: Redefining \microtypecontext on input line 122.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/microtype\mt-p
+pl.cfg"
+File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* hratio: 1:1
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(91.04881pt, 608.5238pt, 95.39737pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=608.5238pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-18.22118pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=20.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box38
+Package hyperref Info: Link coloring OFF on input line 122.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\namer
+ef.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\get
+titlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count162
+)
+LaTeX Info: Redefining \ref on input line 122.
+LaTeX Info: Redefining \pageref on input line 122.
+LaTeX Info: Redefining \nameref on input line 122.
+ (Project3.out) (Project3.out)
+\@outlinefile=\write3
+\openout3 = `Project3.out'.
+
+\c@lstlisting=\count163
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 126.
+LaTeX Font Info:    Try loading font information for OT1+pplx on input line 126
+.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1pplx
+.fd"
+File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
+)
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 126
+.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omlzplm
+.fd"
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 126
+.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omszplm
+.fd"
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 126
+.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omxzplm
+.fd"
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 126
+.
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1zplm
+.fd"
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zplm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplx/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 141.
+
+
+LaTeX Warning: Reference `fig:function' on page 1 undefined on input line 141.
+
+LaTeX Font Info:    Try loading font information for OMS+pplx on input line 168
+.
+LaTeX Font Info:    No file OMSpplx.fd. on input line 168.
+
+LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 168.
+
+<report_plot/plot_bagofword/logistic_regression_accuracy.png, id=30, 409.53pt x
+ 279.0425pt>
+File: report_plot/plot_bagofword/logistic_regression_accuracy.png Graphic file 
+(type png)
+<use report_plot/plot_bagofword/logistic_regression_accuracy.png>
+Package pdftex.def Info: report_plot/plot_bagofword/logistic_regression_accurac
+y.png  used on input line 180.
+(pdftex.def)             Requested size: 208.79504pt x 142.26378pt.
+<report_plot/plot_bagofword/logistic_regression_runtime.png, id=32, 381.425pt x
+ 279.0425pt>
+File: report_plot/plot_bagofword/logistic_regression_runtime.png Graphic file (
+type png)
+<use report_plot/plot_bagofword/logistic_regression_runtime.png>
+Package pdftex.def Info: report_plot/plot_bagofword/logistic_regression_runtime
+.png  used on input line 181.
+(pdftex.def)             Requested size: 194.46597pt x 142.26378pt.
+<report_plot/plot_bagofword/svm_accuracy.png, id=33, 397.485pt x 279.0425pt>
+File: report_plot/plot_bagofword/svm_accuracy.png Graphic file (type png)
+<use report_plot/plot_bagofword/svm_accuracy.png>
+Package pdftex.def Info: report_plot/plot_bagofword/svm_accuracy.png  used on i
+nput line 183.
+(pdftex.def)             Requested size: 202.654pt x 142.26378pt.
+<report_plot/plot_bagofword/svm_runtime.png, id=34, 394.47375pt x 279.0425pt>
+File: report_plot/plot_bagofword/svm_runtime.png Graphic file (type png)
+<use report_plot/plot_bagofword/svm_runtime.png>
+Package pdftex.def Info: report_plot/plot_bagofword/svm_runtime.png  used on in
+put line 184.
+(pdftex.def)             Requested size: 201.11874pt x 142.26378pt.
+<report_plot/plot_bagofword/mlp_accuracy.png, id=35, 403.5075pt x 279.0425pt>
+File: report_plot/plot_bagofword/mlp_accuracy.png Graphic file (type png)
+<use report_plot/plot_bagofword/mlp_accuracy.png>
+Package pdftex.def Info: report_plot/plot_bagofword/mlp_accuracy.png  used on i
+nput line 186.
+(pdftex.def)             Requested size: 205.72453pt x 142.26378pt.
+<report_plot/plot_bagofword/mlp_runtime.png, id=36, 399.4925pt x 279.0425pt>
+File: report_plot/plot_bagofword/mlp_runtime.png Graphic file (type png)
+<use report_plot/plot_bagofword/mlp_runtime.png>
+Package pdftex.def Info: report_plot/plot_bagofword/mlp_runtime.png  used on in
+put line 187.
+(pdftex.def)             Requested size: 203.67752pt x 142.26378pt.
+<report_plot/plot_bagofword/rf_accuracy.png, id=37, 396.48125pt x 279.0425pt>
+File: report_plot/plot_bagofword/rf_accuracy.png Graphic file (type png)
+<use report_plot/plot_bagofword/rf_accuracy.png>
+Package pdftex.def Info: report_plot/plot_bagofword/rf_accuracy.png  used on in
+put line 189.
+(pdftex.def)             Requested size: 202.14226pt x 142.26378pt.
+<report_plot/plot_bagofword/rf_runtime.png, id=38, 393.47pt x 279.0425pt>
+File: report_plot/plot_bagofword/rf_runtime.png Graphic file (type png)
+<use report_plot/plot_bagofword/rf_runtime.png>
+Package pdftex.def Info: report_plot/plot_bagofword/rf_runtime.png  used on inp
+ut line 190.
+(pdftex.def)             Requested size: 200.607pt x 142.26378pt.
+LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <9> not available
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 195.
+[1
+
+{C:/Users/huanglinc/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+[2]
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstla
+ng1.sty"
+File: lstlang1.sty 2018/09/02 1.7 listings language file
+) [3 <./report_plot/plot_bagofword/logistic_regression_accuracy.png> <./report_
+plot/plot_bagofword/logistic_regression_runtime.png> <./report_plot/plot_bagofw
+ord/svm_accuracy.png> <./report_plot/plot_bagofword/svm_runtime.png> <./report_
+plot/plot_bagofword/mlp_accuracy.png> <./report_plot/plot_bagofword/mlp_runtime
+.png> <./report_plot/plot_bagofword/rf_accuracy.png> <./report_plot/plot_bagofw
+ord/rf_runtime.png>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 199.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 199.
+
+
+("C:\Users\huanglinc\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd
+"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [4] [5]
+<report_plot/plot_bagofword/best_accuracy.png, id=182, 396.48125pt x 279.0425pt
+>
+File: report_plot/plot_bagofword/best_accuracy.png Graphic file (type png)
+<use report_plot/plot_bagofword/best_accuracy.png>
+Package pdftex.def Info: report_plot/plot_bagofword/best_accuracy.png  used on 
+input line 309.
+(pdftex.def)             Requested size: 202.14226pt x 142.26378pt.
+<report_plot/plot_bagofword/best_alg_runtime.png, id=183, 393.47pt x 279.0425pt
+>
+File: report_plot/plot_bagofword/best_alg_runtime.png Graphic file (type png)
+<use report_plot/plot_bagofword/best_alg_runtime.png>
+Package pdftex.def Info: report_plot/plot_bagofword/best_alg_runtime.png  used 
+on input line 310.
+(pdftex.def)             Requested size: 200.607pt x 142.26378pt.
+<report_plot/plot_tfidf/logistic_regression_accuracy.png, id=184, 396.48125pt x
+ 279.0425pt>
+File: report_plot/plot_tfidf/logistic_regression_accuracy.png Graphic file (typ
+e png)
+<use report_plot/plot_tfidf/logistic_regression_accuracy.png>
+Package pdftex.def Info: report_plot/plot_tfidf/logistic_regression_accuracy.pn
+g  used on input line 321.
+(pdftex.def)             Requested size: 202.14226pt x 142.26378pt.
+<report_plot/plot_tfidf/logistic_regression_runtime.png, id=185, 390.45876pt x 
+279.0425pt>
+File: report_plot/plot_tfidf/logistic_regression_runtime.png Graphic file (type
+ png)
+<use report_plot/plot_tfidf/logistic_regression_runtime.png>
+Package pdftex.def Info: report_plot/plot_tfidf/logistic_regression_runtime.png
+  used on input line 322.
+(pdftex.def)             Requested size: 199.07175pt x 142.26378pt.
+<report_plot/plot_tfidf/svm_accuracy.png, id=186, 396.48125pt x 279.0425pt>
+File: report_plot/plot_tfidf/svm_accuracy.png Graphic file (type png)
+<use report_plot/plot_tfidf/svm_accuracy.png>
+Package pdftex.def Info: report_plot/plot_tfidf/svm_accuracy.png  used on input
+ line 324.
+(pdftex.def)             Requested size: 202.14226pt x 142.26378pt.
+<report_plot/plot_tfidf/svm_runtime.png, id=187, 396.48125pt x 279.0425pt>
+File: report_plot/plot_tfidf/svm_runtime.png Graphic file (type png)
+<use report_plot/plot_tfidf/svm_runtime.png>
+Package pdftex.def Info: report_plot/plot_tfidf/svm_runtime.png  used on input 
+line 325.
+(pdftex.def)             Requested size: 202.14226pt x 142.26378pt.
+<report_plot/plot_tfidf/mlp_accuracy.png, id=188, 409.53pt x 279.0425pt>
+File: report_plot/plot_tfidf/mlp_accuracy.png Graphic file (type png)
+<use report_plot/plot_tfidf/mlp_accuracy.png>
+Package pdftex.def Info: report_plot/plot_tfidf/mlp_accuracy.png  used on input
+ line 327.
+(pdftex.def)             Requested size: 208.79504pt x 142.26378pt.
+<report_plot/plot_tfidf/mlp_runtime.png, id=189, 393.47pt x 279.0425pt>
+File: report_plot/plot_tfidf/mlp_runtime.png Graphic file (type png)
+<use report_plot/plot_tfidf/mlp_runtime.png>
+Package pdftex.def Info: report_plot/plot_tfidf/mlp_runtime.png  used on input 
+line 328.
+(pdftex.def)             Requested size: 200.607pt x 142.26378pt.
+<report_plot/plot_tfidf/rf_accuracy.png, id=190, 396.48125pt x 279.0425pt>
+File: report_plot/plot_tfidf/rf_accuracy.png Graphic file (type png)
+<use report_plot/plot_tfidf/rf_accuracy.png>
+Package pdftex.def Info: report_plot/plot_tfidf/rf_accuracy.png  used on input 
+line 330.
+(pdftex.def)             Requested size: 202.14226pt x 142.26378pt.
+<report_plot/plot_tfidf/rf_runtime.png, id=191, 393.47pt x 279.0425pt>
+File: report_plot/plot_tfidf/rf_runtime.png Graphic file (type png)
+<use report_plot/plot_tfidf/rf_runtime.png>
+Package pdftex.def Info: report_plot/plot_tfidf/rf_runtime.png  used on input l
+ine 331.
+(pdftex.def)             Requested size: 200.607pt x 142.26378pt.
+ [6 <./report_plot/plot_bagofword/best_accuracy.png> <./report_plot/plot_bagofw
+ord/best_alg_runtime.png>] [7 <./report_plot/plot_tfidf/logistic_regression_acc
+uracy.png> <./report_plot/plot_tfidf/logistic_regression_runtime.png> <./report
+_plot/plot_tfidf/svm_accuracy.png> <./report_plot/plot_tfidf/svm_runtime.png> <
+./report_plot/plot_tfidf/mlp_accuracy.png> <./report_plot/plot_tfidf/mlp_runtim
+e.png> <./report_plot/plot_tfidf/rf_accuracy.png> <./report_plot/plot_tfidf/rf_
+runtime.png>] [8]
+<report_plot/plot_tfidf/best_accuracy.png, id=269, 398.48875pt x 279.0425pt>
+File: report_plot/plot_tfidf/best_accuracy.png Graphic file (type png)
+<use report_plot/plot_tfidf/best_accuracy.png>
+Package pdftex.def Info: report_plot/plot_tfidf/best_accuracy.png  used on inpu
+t line 442.
+(pdftex.def)             Requested size: 203.16577pt x 142.26378pt.
+<report_plot/plot_tfidf/best_alg_runtime.png, id=270, 395.4775pt x 279.0425pt>
+File: report_plot/plot_tfidf/best_alg_runtime.png Graphic file (type png)
+<use report_plot/plot_tfidf/best_alg_runtime.png>
+Package pdftex.def Info: report_plot/plot_tfidf/best_alg_runtime.png  used on i
+nput line 443.
+(pdftex.def)             Requested size: 201.63051pt x 142.26378pt.
+ [9]
+<report_plot/plot_doc2vec/logistic_regression_accuracy.png, id=320, 409.53pt x 
+279.0425pt>
+File: report_plot/plot_doc2vec/logistic_regression_accuracy.png Graphic file (t
+ype png)
+<use report_plot/plot_doc2vec/logistic_regression_accuracy.png>
+Package pdftex.def Info: report_plot/plot_doc2vec/logistic_regression_accuracy.
+png  used on input line 455.
+(pdftex.def)             Requested size: 208.79504pt x 142.26378pt.
+<report_plot/plot_doc2vec/logistic_regression_runtime.png, id=321, 387.4475pt x
+ 279.0425pt>
+File: report_plot/plot_doc2vec/logistic_regression_runtime.png Graphic file (ty
+pe png)
+<use report_plot/plot_doc2vec/logistic_regression_runtime.png>
+Package pdftex.def Info: report_plot/plot_doc2vec/logistic_regression_runtime.p
+ng  used on input line 456.
+(pdftex.def)             Requested size: 197.53648pt x 142.26378pt.
+<report_plot/plot_doc2vec/svm_accuracy.png, id=322, 396.48125pt x 279.0425pt>
+File: report_plot/plot_doc2vec/svm_accuracy.png Graphic file (type png)
+<use report_plot/plot_doc2vec/svm_accuracy.png>
+Package pdftex.def Info: report_plot/plot_doc2vec/svm_accuracy.png  used on inp
+ut line 458.
+(pdftex.def)             Requested size: 202.14226pt x 142.26378pt.
+<report_plot/plot_doc2vec/svm_runtime.png, id=323, 397.485pt x 279.0425pt>
+File: report_plot/plot_doc2vec/svm_runtime.png Graphic file (type png)
+<use report_plot/plot_doc2vec/svm_runtime.png>
+Package pdftex.def Info: report_plot/plot_doc2vec/svm_runtime.png  used on inpu
+t line 459.
+(pdftex.def)             Requested size: 202.654pt x 142.26378pt.
+<report_plot/plot_doc2vec/mlp_accuracy.png, id=324, 403.5075pt x 279.0425pt>
+File: report_plot/plot_doc2vec/mlp_accuracy.png Graphic file (type png)
+<use report_plot/plot_doc2vec/mlp_accuracy.png>
+Package pdftex.def Info: report_plot/plot_doc2vec/mlp_accuracy.png  used on inp
+ut line 461.
+(pdftex.def)             Requested size: 205.72453pt x 142.26378pt.
+<report_plot/plot_doc2vec/mlp_runtime.png, id=325, 387.4475pt x 279.0425pt>
+File: report_plot/plot_doc2vec/mlp_runtime.png Graphic file (type png)
+<use report_plot/plot_doc2vec/mlp_runtime.png>
+Package pdftex.def Info: report_plot/plot_doc2vec/mlp_runtime.png  used on inpu
+t line 462.
+(pdftex.def)             Requested size: 197.53648pt x 142.26378pt.
+<report_plot/plot_doc2vec/rf_accuracy.png, id=326, 396.48125pt x 279.0425pt>
+File: report_plot/plot_doc2vec/rf_accuracy.png Graphic file (type png)
+<use report_plot/plot_doc2vec/rf_accuracy.png>
+Package pdftex.def Info: report_plot/plot_doc2vec/rf_accuracy.png  used on inpu
+t line 464.
+(pdftex.def)             Requested size: 202.14226pt x 142.26378pt.
+<report_plot/plot_doc2vec/rf_runtime.png, id=327, 393.47pt x 279.0425pt>
+File: report_plot/plot_doc2vec/rf_runtime.png Graphic file (type png)
+<use report_plot/plot_doc2vec/rf_runtime.png>
+Package pdftex.def Info: report_plot/plot_doc2vec/rf_runtime.png  used on input
+ line 465.
+(pdftex.def)             Requested size: 200.607pt x 142.26378pt.
+ [10 <./report_plot/plot_tfidf/best_accuracy.png> <./report_plot/plot_tfidf/bes
+t_alg_runtime.png>]
+<report_plot/plot_doc2vec/best_accuracy.png, id=335, 396.48125pt x 279.0425pt>
+File: report_plot/plot_doc2vec/best_accuracy.png Graphic file (type png)
+<use report_plot/plot_doc2vec/best_accuracy.png>
+Package pdftex.def Info: report_plot/plot_doc2vec/best_accuracy.png  used on in
+put line 477.
+(pdftex.def)             Requested size: 202.14226pt x 142.26378pt.
+<report_plot/plot_doc2vec/best_alg_runtime.png, id=336, 393.47pt x 279.0425pt>
+File: report_plot/plot_doc2vec/best_alg_runtime.png Graphic file (type png)
+<use report_plot/plot_doc2vec/best_alg_runtime.png>
+Package pdftex.def Info: report_plot/plot_doc2vec/best_alg_runtime.png  used on
+ input line 478.
+(pdftex.def)             Requested size: 200.607pt x 142.26378pt.
+ [11 <./report_plot/plot_doc2vec/logistic_regression_accuracy.png> <./report_pl
+ot/plot_doc2vec/logistic_regression_runtime.png> <./report_plot/plot_doc2vec/sv
+m_accuracy.png> <./report_plot/plot_doc2vec/svm_runtime.png> <./report_plot/plo
+t_doc2vec/mlp_accuracy.png> <./report_plot/plot_doc2vec/mlp_runtime.png> <./rep
+ort_plot/plot_doc2vec/rf_accuracy.png> <./report_plot/plot_doc2vec/rf_runtime.p
+ng>] [12 <./report_plot/plot_doc2vec/best_accuracy.png> <./report_plot/plot_doc
+2vec/best_alg_runtime.png>]
+[13]
+<report_plot/plot_variable_dimension_desktop/bagofword_accurary_dimension.png, 
+id=449, 400.49625pt x 279.0425pt>
+File: report_plot/plot_variable_dimension_desktop/bagofword_accurary_dimension.
+png Graphic file (type png)
+<use report_plot/plot_variable_dimension_desktop/bagofword_accurary_dimension.p
+ng>
+Package pdftex.def Info: report_plot/plot_variable_dimension_desktop/bagofword_
+accurary_dimension.png  used on input line 584.
+(pdftex.def)             Requested size: 204.18927pt x 142.26378pt.
+<report_plot/plot_variable_dimension_desktop/bagofword_accurary_runtime.png, id
+=450, 403.5075pt x 279.0425pt>
+File: report_plot/plot_variable_dimension_desktop/bagofword_accurary_runtime.pn
+g Graphic file (type png)
+<use report_plot/plot_variable_dimension_desktop/bagofword_accurary_runtime.png
+>
+Package pdftex.def Info: report_plot/plot_variable_dimension_desktop/bagofword_
+accurary_runtime.png  used on input line 585.
+(pdftex.def)             Requested size: 205.72453pt x 142.26378pt.
+<report_plot/plot_variable_dimension_surface/tf-idf_accurary_dimension.png, id=
+451, 400.49625pt x 279.0425pt>
+File: report_plot/plot_variable_dimension_surface/tf-idf_accurary_dimension.png
+ Graphic file (type png)
+<use report_plot/plot_variable_dimension_surface/tf-idf_accurary_dimension.png>
+
+Package pdftex.def Info: report_plot/plot_variable_dimension_surface/tf-idf_acc
+urary_dimension.png  used on input line 587.
+(pdftex.def)             Requested size: 204.18927pt x 142.26378pt.
+<report_plot/plot_variable_dimension_surface/tf-idf_accurary_runtime.png, id=45
+2, 403.5075pt x 279.0425pt>
+File: report_plot/plot_variable_dimension_surface/tf-idf_accurary_runtime.png G
+raphic file (type png)
+<use report_plot/plot_variable_dimension_surface/tf-idf_accurary_runtime.png>
+Package pdftex.def Info: report_plot/plot_variable_dimension_surface/tf-idf_acc
+urary_runtime.png  used on input line 588.
+(pdftex.def)             Requested size: 205.72453pt x 142.26378pt.
+<report_plot/plot_variable_dimension_desktop/doc2vec_accurary_dimension.png, id
+=453, 396.48125pt x 279.0425pt>
+File: report_plot/plot_variable_dimension_desktop/doc2vec_accurary_dimension.pn
+g Graphic file (type png)
+<use report_plot/plot_variable_dimension_desktop/doc2vec_accurary_dimension.png
+>
+Package pdftex.def Info: report_plot/plot_variable_dimension_desktop/doc2vec_ac
+curary_dimension.png  used on input line 590.
+(pdftex.def)             Requested size: 202.14226pt x 142.26378pt.
+<report_plot/plot_variable_dimension_desktop/doc2vec_accurary_runtime.png, id=4
+54, 393.47pt x 279.0425pt>
+File: report_plot/plot_variable_dimension_desktop/doc2vec_accurary_runtime.png 
+Graphic file (type png)
+<use report_plot/plot_variable_dimension_desktop/doc2vec_accurary_runtime.png>
+Package pdftex.def Info: report_plot/plot_variable_dimension_desktop/doc2vec_ac
+curary_runtime.png  used on input line 591.
+(pdftex.def)             Requested size: 200.607pt x 142.26378pt.
+
+
+LaTeX Warning: Reference `fig:highmutation' on page 14 undefined on input line 
+607.
+
+
+LaTeX Warning: Reference `fig:low_mut_pop' on page 14 undefined on input line 6
+18.
+
+
+LaTeX Warning: Reference `fig:high_mut_pop' on page 14 undefined on input line 
+618.
+
+
+LaTeX Warning: Reference `fig:low_mut_pop' on page 14 undefined on input line 6
+18.
+
+
+LaTeX Warning: Reference `fig:high_mut_pop' on page 14 undefined on input line 
+618.
+
+[14 <./report_plot/plot_variable_dimension_desktop/bagofword_accurary_dimension
+.png> <./report_plot/plot_variable_dimension_desktop/bagofword_accurary_runtime
+.png> <./report_plot/plot_variable_dimension_surface/tf-idf_accurary_dimension.
+png> <./report_plot/plot_variable_dimension_surface/tf-idf_accurary_runtime.png
+> <./report_plot/plot_variable_dimension_desktop/doc2vec_accurary_dimension.png
+> <./report_plot/plot_variable_dimension_desktop/doc2vec_accurary_runtime.png>]
+
+LaTeX Warning: Reference `fig:highmutation' on page 15 undefined on input line 
+626.
+
+
+LaTeX Warning: Reference `fig:low_mut_pop' on page 15 undefined on input line 6
+28.
+
+
+LaTeX Warning: Reference `fig:high_mut_pop' on page 15 undefined on input line 
+628.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 671.
+[15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 671.
+ (Project3.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 671.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 671.
+Package rerunfilecheck Info: File `Project3.out' has not changed.
+(rerunfilecheck)             Checksum: D198C83936353AF9B969C653F36EEB3B;454.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 671.
+ ) 
+Here is how much of TeX's memory you used:
+ 13186 strings out of 492946
+ 207293 string characters out of 3124490
+ 562965 words of memory out of 3000000
+ 16432 multiletter control sequences out of 15000+200000
+ 47888 words of font info for 145 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,15n,43p,643b,2067s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{lstlisting.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+ <C:\Users\huanglinc\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ectt0900.pk>{C:/Users/huanglinc/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/d
+vips/base/8r.enc}<C:/Users/huanglinc/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr10.pfb><C:/Users/huanglinc/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/huanglinc/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/huang
+linc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/U
+sers/huanglinc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8
+a.pfb><C:/Users/huanglinc/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/pal
+atino/uplr8a.pfb><C:/Users/huanglinc/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/urw/palatino/uplri8a.pfb>
+Output written on Project3.pdf (15 pages, 634016 bytes).
+PDF statistics:
+ 623 PDF objects out of 1000 (max. 8388607)
+ 320 named destinations out of 1000 (max. 500000)
+ 40165 words of extra memory for PDF output out of 42996 (max. 10000000)
+

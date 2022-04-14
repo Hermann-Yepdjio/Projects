@@ -1,0 +1,73 @@
+from sklearn.cluster import KMeans
+from PIL import Image
+import numpy as np
+
+def normalize(file_name):
+    img = Image.open(file_name) # Can be many different formats.
+    pix = img.load()
+    np_pix = np.array(img)
+    size = np_pix.shape
+    #print(np_pix)
+    #print(size)
+
+    val_0 = np_pix[0][0]
+    x_0 = 1 / size[0]
+    y_0 = 1 / size[1]
+    norm_np_pix = np.array([[val_0, x_0, y_0]])
+    count = 0
+
+    #for i in range(0, size[0]):
+    #    for j in range(0, size[1]):
+    #        if( count != 0):
+    #            norm_np_pix = np.concatenate((norm_np_pix, [[np_pix[i][j], (i + 1)/size[0], (j + 1)/size[1]]]))
+    #        else:
+    #            count += 1
+    return np.reshape(np_pix, (np_pix.size, 1)), size, np_pix #norm_np_pix, size, np_pix
+
+
+def cluster_and_recolor(norm_np_pix, size, num_clusters, np_pix):
+    clt = KMeans(n_clusters = num_clusters)
+    clt.fit(norm_np_pix)
+
+    #tmp_np_pix = np.reshape(np_pix, np_pix.size)
+    tmp_np_pix = np.zeros((size[0], size[1], 3), dtype =np.uint8 )
+    k, j = 0, 0
+    for i in range(0, (clt.labels_).size):
+        if( clt.labels_[i] == 0):
+            tmp_np_pix[k][j] = [255, 0, 0] #red	
+        elif clt.labels_[i] == 1:
+            tmp_np_pix[k][j] = [255, 255, 0] #yellow
+        elif (clt.labels_[i] == 2):
+            tmp_np_pix[k][j] = [0, 0, 255] #blue
+        elif(clt.labels_[i] == 3):
+            tmp_np_pix[k][j] = [0, 128, 0]
+        else:
+            tmp_np_pix[k][j] = [176, 196, 222]
+        j += 1
+        if j == size[1]:
+            k += 1
+            j = 0
+
+    
+    #print(clt.labels_)
+    #print(tmp_np_pix)
+    #tmp_np_pix = np.reshape(tmp_np_pix, (size[0], size[1]))
+
+
+
+    #print(tmp_np_pix)
+
+    new_img = Image.fromarray(tmp_np_pix).convert('RGB')
+    #return new_img
+    new_img.save("/media/hermann/Tonpi/tonpi/Collegecourses/CWU/Graduate-School/Thesis/Data Sets/tmp.jpg")#(file_name + '/' + file_name + '_' + str(num_clusters) + '_clusters_pix_only.jpg')
+
+#def main():
+#    for i in range(1, 17):
+#        norm_np_pix, size, np_pix= normalize(str(i))
+#        print(size)
+#        for j in range(3, 6):
+#            cluster_and_recolor(str(i), norm_np_pix, size, j, np_pix)
+#            print(str(1) + "_" + str(j) + "   done!")
+
+#if __name__ == "__main__":
+    #main()

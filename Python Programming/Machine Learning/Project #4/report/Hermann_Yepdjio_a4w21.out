@@ -1,0 +1,4 @@
+\BOOKMARK [1][-]{section.1}{ MNIST Data Set: K-means Clustering of 1,000 Images}{}% 1
+\BOOKMARK [1][-]{section.2}{K-means Clustering Using Feature Vectors}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Without PCA}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{With PCA \(25 principal components\)}{section.2}% 4

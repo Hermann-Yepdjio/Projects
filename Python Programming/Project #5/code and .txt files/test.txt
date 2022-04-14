@@ -1,0 +1,78 @@
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:
+
+Almost everyone has heard of Google’s MapReduce framework, but very few have ever hacked around with the idea of map and reduce. These two idioms are borrowed from functional programming, and form the basis of Google’s framework. Read: http://developer.yahoo.com/hadoop/tutorial/module4.html to understand what MapReduce and Hadoop are. You may also read the following article (on Canvas): MapReduce: Simplified Data Processing on Large Clusters, by Jeffrey Dean and Sanjay Ghemawat.
+
+The Python multiprocessing package supports spawning processes using an API similar to the threading module. The multiprocessing package offers both local and remote concurrency using subprocesses instead of threads. Due to this, the multiprocessing module allows the programmer to fully leverage multiple processors on a given machine. 
+The Python multiprocessing.Pool  package provides a mechanism for the parallelization of map/reduce style calculations.
+Read:

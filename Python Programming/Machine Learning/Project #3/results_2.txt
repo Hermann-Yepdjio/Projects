@@ -1,0 +1,266 @@
+Epoch 0/24
+----------
+train Loss: 0.5840 Acc: 0.7172
+val Loss: 0.3179 Acc: 0.9216
+
+Epoch 1/24
+----------
+train Loss: 0.4786 Acc: 0.7664
+val Loss: 0.2193 Acc: 0.9281
+
+Epoch 2/24
+----------
+train Loss: 0.3530 Acc: 0.8320
+val Loss: 0.2047 Acc: 0.9346
+
+Epoch 3/24
+----------
+train Loss: 0.3790 Acc: 0.8238
+val Loss: 0.2052 Acc: 0.9281
+
+Epoch 4/24
+----------
+train Loss: 0.2967 Acc: 0.8689
+val Loss: 0.1795 Acc: 0.9281
+
+Epoch 5/24
+----------
+train Loss: 0.3315 Acc: 0.8484
+val Loss: 0.1798 Acc: 0.9477
+
+Epoch 6/24
+----------
+train Loss: 0.4401 Acc: 0.7787
+val Loss: 0.2026 Acc: 0.9216
+
+Epoch 7/24
+----------
+train Loss: 0.3484 Acc: 0.8279
+val Loss: 0.1740 Acc: 0.9477
+
+Epoch 8/24
+----------
+train Loss: 0.2344 Acc: 0.9016
+val Loss: 0.1718 Acc: 0.9412
+
+Epoch 9/24
+----------
+train Loss: 0.2449 Acc: 0.9057
+val Loss: 0.1724 Acc: 0.9346
+
+Epoch 10/24
+----------
+train Loss: 0.1988 Acc: 0.9344
+val Loss: 0.1702 Acc: 0.9412
+
+Epoch 11/24
+----------
+train Loss: 0.3844 Acc: 0.8033
+val Loss: 0.2172 Acc: 0.9281
+
+Epoch 12/24
+----------
+train Loss: 0.3300 Acc: 0.8648
+val Loss: 0.1765 Acc: 0.9281
+
+Epoch 13/24
+----------
+train Loss: 0.2376 Acc: 0.9139
+val Loss: 0.1613 Acc: 0.9477
+
+Epoch 14/24
+----------
+train Loss: 0.3039 Acc: 0.8730
+val Loss: 0.1776 Acc: 0.9281
+
+Epoch 15/24
+----------
+train Loss: 0.3028 Acc: 0.8648
+val Loss: 0.1851 Acc: 0.9542
+
+Epoch 16/24
+----------
+train Loss: 0.2533 Acc: 0.9098
+val Loss: 0.1783 Acc: 0.9477
+
+Epoch 17/24
+----------
+train Loss: 0.2357 Acc: 0.9139
+val Loss: 0.1631 Acc: 0.9346
+
+Epoch 18/24
+----------
+train Loss: 0.2662 Acc: 0.8811
+val Loss: 0.1702 Acc: 0.9412
+
+Epoch 19/24
+----------
+train Loss: 0.2735 Acc: 0.8811
+val Loss: 0.1899 Acc: 0.9542
+
+Epoch 20/24
+----------
+train Loss: 0.2418 Acc: 0.9139
+val Loss: 0.1816 Acc: 0.9542
+
+Epoch 21/24
+----------
+train Loss: 0.3218 Acc: 0.8730
+val Loss: 0.1851 Acc: 0.9542
+
+Epoch 22/24
+----------
+train Loss: 0.2414 Acc: 0.8975
+val Loss: 0.1688 Acc: 0.9477
+
+Epoch 23/24
+----------
+train Loss: 0.2754 Acc: 0.8852
+val Loss: 0.1715 Acc: 0.9412
+
+Epoch 24/24
+----------
+train Loss: 0.3044 Acc: 0.8811
+val Loss: 0.1846 Acc: 0.9542
+
+Training complete in 11m 59s
+Best val Acc: 0.954248
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/home/hermann/anaconda3/envs/anaconda3-pytorch/lib/python3.6/tkinter/__init__.py", line 1705, in __call__
+    return self.func(*args)
+  File "/home/hermann/anaconda3/envs/anaconda3-pytorch/lib/python3.6/site-packages/matplotlib/backends/_backend_tk.py", line 696, in save_figure
+    initialfile=initialfile,
+  File "/home/hermann/anaconda3/envs/anaconda3-pytorch/lib/python3.6/tkinter/filedialog.py", line 380, in asksaveasfilename
+    return SaveAs(**options).show()
+  File "/home/hermann/anaconda3/envs/anaconda3-pytorch/lib/python3.6/tkinter/commondialog.py", line 43, in show
+    s = w.tk.call(self.command, *w._options(self.options))
+_tkinter.TclError: can't invoke "grab" command: application has been destroyed
+Epoch 0/24
+----------
+train Loss: 0.6319 Acc: 0.6516
+val Loss: 0.4006 Acc: 0.9150
+
+Epoch 1/24
+----------
+train Loss: 0.5209 Acc: 0.7172
+val Loss: 0.3069 Acc: 0.9346
+
+Epoch 2/24
+----------
+train Loss: 0.4526 Acc: 0.7910
+val Loss: 0.2664 Acc: 0.9150
+
+Epoch 3/24
+----------
+train Loss: 0.4158 Acc: 0.8361
+val Loss: 0.2423 Acc: 0.9150
+
+Epoch 4/24
+----------
+train Loss: 0.4930 Acc: 0.7459
+val Loss: 0.2731 Acc: 0.9150
+
+Epoch 5/24
+----------
+train Loss: 0.4623 Acc: 0.7664
+val Loss: 0.2519 Acc: 0.9216
+
+Epoch 6/24
+----------
+train Loss: 0.3197 Acc: 0.8811
+val Loss: 0.2200 Acc: 0.9281
+
+Epoch 7/24
+----------
+train Loss: 0.4348 Acc: 0.7992
+val Loss: 0.2276 Acc: 0.9216
+
+Epoch 8/24
+----------
+train Loss: 0.3858 Acc: 0.8115
+val Loss: 0.2226 Acc: 0.9281
+
+Epoch 9/24
+----------
+train Loss: 0.3146 Acc: 0.8566
+val Loss: 0.2248 Acc: 0.9216
+
+Epoch 10/24
+----------
+train Loss: 0.4019 Acc: 0.8197
+val Loss: 0.2179 Acc: 0.9216
+
+Epoch 11/24
+----------
+train Loss: 0.3791 Acc: 0.8279
+val Loss: 0.2224 Acc: 0.9346
+
+Epoch 12/24
+----------
+train Loss: 0.3777 Acc: 0.8279
+val Loss: 0.2178 Acc: 0.9216
+
+Epoch 13/24
+----------
+train Loss: 0.3496 Acc: 0.8443
+val Loss: 0.2426 Acc: 0.9281
+
+Epoch 14/24
+----------
+train Loss: 0.3965 Acc: 0.7951
+val Loss: 0.2120 Acc: 0.9216
+
+Epoch 15/24
+----------
+train Loss: 0.2906 Acc: 0.8852
+val Loss: 0.2268 Acc: 0.9216
+
+Epoch 16/24
+----------
+train Loss: 0.3217 Acc: 0.8443
+val Loss: 0.2147 Acc: 0.9281
+
+Epoch 17/24
+----------
+train Loss: 0.4010 Acc: 0.8033
+val Loss: 0.2247 Acc: 0.9281
+
+Epoch 18/24
+----------
+train Loss: 0.3727 Acc: 0.8197
+val Loss: 0.2241 Acc: 0.9085
+
+Epoch 19/24
+----------
+train Loss: 0.3572 Acc: 0.8402
+val Loss: 0.2061 Acc: 0.9216
+
+Epoch 20/24
+----------
+train Loss: 0.3968 Acc: 0.8238
+val Loss: 0.2088 Acc: 0.9216
+
+Epoch 21/24
+----------
+train Loss: 0.3917 Acc: 0.7992
+val Loss: 0.2171 Acc: 0.9346
+
+Epoch 22/24
+----------
+train Loss: 0.3642 Acc: 0.8689
+val Loss: 0.2133 Acc: 0.9150
+
+Epoch 23/24
+----------
+train Loss: 0.3526 Acc: 0.8361
+val Loss: 0.2166 Acc: 0.9150
+
+Epoch 24/24
+----------
+train Loss: 0.4606 Acc: 0.7787
+val Loss: 0.2260 Acc: 0.9281
+
+Training complete in 6m 19s
+Best val Acc: 0.934641
+

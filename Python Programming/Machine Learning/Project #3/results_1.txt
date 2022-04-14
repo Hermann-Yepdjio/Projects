@@ -1,0 +1,268 @@
+/home/hermann/anaconda3/envs/anaconda3-pytorch/lib/python3.6/site-packages/torch/cuda/__init__.py:52: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 10010). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at  /pytorch/c10/cuda/CUDAFunctions.cpp:100.)
+  return torch._C._cuda_getDeviceCount() > 0
+Epoch 0/24
+----------
+train Loss: 0.5253 Acc: 0.7459
+val Loss: 0.2237 Acc: 0.8889
+
+Epoch 1/24
+----------
+train Loss: 0.6422 Acc: 0.7377
+val Loss: 0.3377 Acc: 0.8627
+
+Epoch 2/24
+----------
+train Loss: 0.5590 Acc: 0.7787
+val Loss: 0.3654 Acc: 0.8431
+
+Epoch 3/24
+----------
+train Loss: 0.3442 Acc: 0.8607
+val Loss: 0.3707 Acc: 0.8366
+
+Epoch 4/24
+----------
+train Loss: 0.5887 Acc: 0.7623
+val Loss: 0.5169 Acc: 0.8170
+
+Epoch 5/24
+----------
+train Loss: 0.4347 Acc: 0.8033
+val Loss: 0.3008 Acc: 0.8824
+
+Epoch 6/24
+----------
+train Loss: 0.4145 Acc: 0.8074
+val Loss: 0.6813 Acc: 0.7386
+
+Epoch 7/24
+----------
+train Loss: 0.3275 Acc: 0.8443
+val Loss: 0.2080 Acc: 0.9281
+
+Epoch 8/24
+----------
+train Loss: 0.3117 Acc: 0.8934
+val Loss: 0.1943 Acc: 0.9281
+
+Epoch 9/24
+----------
+train Loss: 0.3164 Acc: 0.8525
+val Loss: 0.1933 Acc: 0.9216
+
+Epoch 10/24
+----------
+train Loss: 0.2657 Acc: 0.8730
+val Loss: 0.1589 Acc: 0.9412
+
+Epoch 11/24
+----------
+train Loss: 0.3090 Acc: 0.8648
+val Loss: 0.1798 Acc: 0.9412
+
+Epoch 12/24
+----------
+train Loss: 0.2679 Acc: 0.8811
+val Loss: 0.1929 Acc: 0.9281
+
+Epoch 13/24
+----------
+train Loss: 0.4109 Acc: 0.7992
+val Loss: 0.1858 Acc: 0.9281
+
+Epoch 14/24
+----------
+train Loss: 0.2543 Acc: 0.9016
+val Loss: 0.2013 Acc: 0.9281
+
+Epoch 15/24
+----------
+train Loss: 0.2883 Acc: 0.8852
+val Loss: 0.1953 Acc: 0.9281
+
+Epoch 16/24
+----------
+train Loss: 0.2313 Acc: 0.8934
+val Loss: 0.1822 Acc: 0.9412
+
+Epoch 17/24
+----------
+train Loss: 0.2759 Acc: 0.8770
+val Loss: 0.2019 Acc: 0.9542
+
+Epoch 18/24
+----------
+train Loss: 0.2689 Acc: 0.9057
+val Loss: 0.1904 Acc: 0.9346
+
+Epoch 19/24
+----------
+train Loss: 0.2122 Acc: 0.9180
+val Loss: 0.2181 Acc: 0.9216
+
+Epoch 20/24
+----------
+train Loss: 0.1939 Acc: 0.9262
+val Loss: 0.1930 Acc: 0.9281
+
+Epoch 21/24
+----------
+train Loss: 0.2482 Acc: 0.8934
+val Loss: 0.1843 Acc: 0.9412
+
+Epoch 22/24
+----------
+train Loss: 0.3115 Acc: 0.8607
+val Loss: 0.2273 Acc: 0.9216
+
+Epoch 23/24
+----------
+train Loss: 0.2858 Acc: 0.8893
+val Loss: 0.1985 Acc: 0.9281
+
+Epoch 24/24
+----------
+train Loss: 0.2071 Acc: 0.9180
+val Loss: 0.1821 Acc: 0.9346
+
+Training complete in 10m 37s
+Best val Acc: 0.954248
+Epoch 0/24
+----------
+train Loss: 0.6539 Acc: 0.6967
+val Loss: 0.2423 Acc: 0.9150
+
+Epoch 1/24
+----------
+train Loss: 0.4074 Acc: 0.8033
+val Loss: 0.1790 Acc: 0.9281
+
+Epoch 2/24
+----------
+train Loss: 0.4631 Acc: 0.7582
+val Loss: 0.5229 Acc: 0.8105
+
+Epoch 3/24
+----------
+train Loss: 0.6950 Acc: 0.7459
+val Loss: 0.2760 Acc: 0.8824
+
+Epoch 4/24
+----------
+train Loss: 0.4382 Acc: 0.8074
+val Loss: 0.1576 Acc: 0.9673
+
+Epoch 5/24
+----------
+train Loss: 0.3749 Acc: 0.8197
+val Loss: 0.1828 Acc: 0.9477
+
+Epoch 6/24
+----------
+train Loss: 0.6311 Acc: 0.7623
+val Loss: 0.2033 Acc: 0.9281
+
+Epoch 7/24
+----------
+train Loss: 0.4086 Acc: 0.8361
+val Loss: 0.1829 Acc: 0.9477
+
+Epoch 8/24
+----------
+train Loss: 0.3762 Acc: 0.8443
+val Loss: 0.2076 Acc: 0.9412
+
+Epoch 9/24
+----------
+train Loss: 0.3432 Acc: 0.8525
+val Loss: 0.1817 Acc: 0.9542
+
+Epoch 10/24
+----------
+train Loss: 0.3324 Acc: 0.8648
+val Loss: 0.1900 Acc: 0.9412
+
+Epoch 11/24
+----------
+train Loss: 0.3165 Acc: 0.8689
+val Loss: 0.1886 Acc: 0.9542
+
+Epoch 12/24
+----------
+train Loss: 0.2764 Acc: 0.8689
+val Loss: 0.2036 Acc: 0.9542
+
+Epoch 13/24
+----------
+train Loss: 0.3445 Acc: 0.8525
+val Loss: 0.1957 Acc: 0.9542
+
+Epoch 14/24
+----------
+train Loss: 0.2977 Acc: 0.9057
+val Loss: 0.1920 Acc: 0.9477
+
+Epoch 15/24
+----------
+train Loss: 0.3882 Acc: 0.8279
+val Loss: 0.1884 Acc: 0.9542
+
+Epoch 16/24
+----------
+train Loss: 0.2152 Acc: 0.9221
+val Loss: 0.1924 Acc: 0.9477
+
+Epoch 17/24
+----------
+train Loss: 0.3684 Acc: 0.8361
+val Loss: 0.1720 Acc: 0.9608
+
+Epoch 18/24
+----------
+train Loss: 0.2972 Acc: 0.8852
+val Loss: 0.1809 Acc: 0.9412
+
+Epoch 19/24
+----------
+train Loss: 0.2975 Acc: 0.8484
+val Loss: 0.1925 Acc: 0.9542
+
+Epoch 20/24
+----------
+train Loss: 0.3654 Acc: 0.8566
+val Loss: 0.2048 Acc: 0.9412
+
+Epoch 21/24
+----------
+train Loss: 0.3446 Acc: 0.8402
+val Loss: 0.1938 Acc: 0.9477
+
+Epoch 22/24
+----------
+train Loss: 0.3771 Acc: 0.8361
+val Loss: 0.1748 Acc: 0.9477
+
+Epoch 23/24
+----------
+train Loss: 0.3383 Acc: 0.8443
+val Loss: 0.1885 Acc: 0.9542
+
+Epoch 24/24
+----------
+train Loss: 0.3245 Acc: 0.8443
+val Loss: 0.2085 Acc: 0.9281
+
+Training complete in 4m 34s
+Best val Acc: 0.967320
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/home/hermann/anaconda3/envs/anaconda3-pytorch/lib/python3.6/tkinter/__init__.py", line 1705, in __call__
+    return self.func(*args)
+  File "/home/hermann/anaconda3/envs/anaconda3-pytorch/lib/python3.6/site-packages/matplotlib/backends/_backend_tk.py", line 696, in save_figure
+    initialfile=initialfile,
+  File "/home/hermann/anaconda3/envs/anaconda3-pytorch/lib/python3.6/tkinter/filedialog.py", line 380, in asksaveasfilename
+    return SaveAs(**options).show()
+  File "/home/hermann/anaconda3/envs/anaconda3-pytorch/lib/python3.6/tkinter/commondialog.py", line 43, in show
+    s = w.tk.call(self.command, *w._options(self.options))
+_tkinter.TclError: can't invoke "grab" command: application has been destroyed
+

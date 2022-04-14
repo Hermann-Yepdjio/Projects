@@ -1,0 +1,41 @@
+
+
+---------------------------------start loading data---------------------------------
+
+
+Shape of train set:  (536, 40)
+Shape of test set:  (126, 40)
+Shape of train targets:  (536,)
+Shape of test targets:  (126,)
+
+--------------End loading data.  Running time:  0.36907434463500977  seconds---------------------
+
+
+
+--------------------------------start oversampling training set---------------------------------------
+
+
+The positive set is being oversampled...
+
+Shape of new train set:  (444, 40)
+Shape of new train targets:  (444,)
+
+-------------- End oversampling training set. Running time:  0.0006031990051269531  seconds---------------------
+
+
+
+--------------------------------start RF classification---------------------------------------
+
+
+
+---------End RF Model Test. Running time:  0.06814169883728027  seconds. Number of samples used for testing:  219 ------------------
+
+AUC:  0.8610785953177258
+Accuracy for Random Forest, n estimators 900: 0.8584474885844748
+
+ Confusion Matrix: 
+ [[95  9]
+ [22 93]]
+
+--------------------End RF classification. Running time:  1.842538833618164  seconds---------------------
+

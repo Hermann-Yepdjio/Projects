@@ -1,0 +1,7 @@
+\BOOKMARK [1][-]{section.1}{Construct a Simple CNN}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Submit Plots}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Feature Maps of 10 Images at the Last Convolution Layer}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{Select Relu, Learning Rate of 0.001, Cross-entropy Loss. Change the Network to Use 3x3 Kernels}{}% 4
+\BOOKMARK [1][-]{section.3}{Build a CNN with 5 Convolution Layers with 3x3 Kernels and Corresponding 2x2 Average Pooling with Stride 1}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{How long did it take to train? Why?}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{How does the Accuracy of this Network Compare Against the Previous Two? Explain}{section.3}% 7
